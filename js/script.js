@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/andrajos_alfonso.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13 (2).jpeg",
-            category: "Plato Principal",
+            category: "Guisos y Cuchara",
             abuela: 'Lili',
             rotation: 0
         },
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/gazpachuelo_lili.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (1).jpeg",
-            category: "Sopa",
+            category: "Guisos y Cuchara",
             abuela: 'Lili',
             rotation: 0
         },
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/albondigas_caseras.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (1).jpeg",
-            category: "Plato Principal",
+            category: "Carnes",
             abuela: 'Lili',
             rotation: 0
         },
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/lasana_carne.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (2).jpeg",
-            category: "Plato Principal",
+            category: "Arroces y Pastas",
             abuela: 'Lili',
             rotation: 0
         },
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/pavo_trufao.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (3).jpeg",
-            category: "Plato Principal",
+            category: "Carnes",
             abuela: 'Lili',
             rotation: 0
         },
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/calamares_rellenos.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14.jpeg",
-            category: "Plato Principal",
+            category: "Pescados y Mariscos",
             abuela: 'Lili',
             rotation: 0
         },
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/paella_alfonso.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.56.55.jpeg",
-            category: "Plato Principal",
+            category: "Arroces y Pastas",
             abuela: 'Lili',
             rotation: 0
         },
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/canelones_foie.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12.jpeg",
-            category: "Plato Principal",
+            category: "Arroces y Pastas",
             abuela: 'Lili',
             rotation: 0
         },
@@ -857,7 +857,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Añadir el majado y el vino.<br>
                 3. Cubrir de agua y cocer en olla exprés o normal lentamente hasta que esté tierno.
             `,
-            image: "assets/cordero_guisado.jpg"
+            image: "assets/placeholder.png"
         },
         {
             id: '20251204_184516',
@@ -896,7 +896,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Por último la panceta bien frita.<br>
                 4. (Añadir el pan humedecido y remover hasta que estén sueltas y doradas).
             `,
-            image: "assets/migas_espanolas.jpg"
+            image: "assets/placeholder.png"
         },
         {
             id: '20251204_184532',
@@ -918,7 +918,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 4. Hornear con las verduras y 1 vaso de agua a 200º durante 20 min.<br>
                 5. Servir con puré y manzana.
             `,
-            image: "assets/redondo_mostaza.jpg"
+            image: "assets/placeholder.png"
         },
         {
             id: '20251204_184536',
@@ -939,7 +939,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Añadir el caldo de pescado caliente (con la tinta disuelta).<br>
                 4. Cocinar hasta que esté en su punto.
             `,
-            image: "assets/arroz_negro.jpg"
+            image: "assets/placeholder.png"
         },
         {
             id: '20251204_184543',
@@ -2076,7 +2076,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const categories = new Set(recipes.map(r => r.category).filter(Boolean));
 
         // We want 'Todas' first, then the rest sorted
-        let html = `<button class="category-btn ${currentCategory === 'all' ? 'active' : ''}" data-category="all">Todas</button>`;
+        let html = `<button class="category-btn ${currentCategory === 'all' ? 'active' : ''}" data-category="all">Todas las recetas (${recipes.length})</button>`;
 
         Array.from(categories).sort().forEach(cat => {
             html += `<button class="category-btn ${currentCategory === cat ? 'active' : ''}" data-category="${cat}">${cat}</button>`;
