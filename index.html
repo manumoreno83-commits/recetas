@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cocina de Lili y Mari</title>
+    <meta name="description"
+        content="Una colección digital de recetas familiares llenas de tradición y amor. Dedicado a Lili, Mari y Amelia.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Caveat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#C67142">
+    <link rel="apple-touch-icon" href="assets/placeholder.png">
+
+
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker Registered'))
+                    .catch(err => console.log('Service Worker Error:', err));
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="glass-nav">
+            <div class="logo">La Cocina de <span class="highlight">Lili y Mari</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#recipes">Recetario</a></li>
+                <li><a href="#about">Dedicatoria</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>La Cocina de <span class="text-gradient">Lili y Mari</span></h1>
+                <p>El sabor de siempre, el amor eterno de Lili y Mari</p>
+                <div class="cta-group">
+                    <a href="#recipes" class="btn btn-primary">Ver Recetario</a>
+
+                    <a href="#about" class="btn btn-secondary">Leer Historia</a>
+                </div>
+            </div>
+            <div class="hero-background-elements">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-box">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                <input type="text" id="searchInput" placeholder="Busca por receta o ingredientes" class="search-input">
+                <button class="search-btn">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="text-align: center; margin-top: -30px; position:relative; z-index: 10;">
+            <span class="floral-divider">❦</span>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>Lili, Mari y Amelia: El arte de cuidar</h2>
+            <div class="dedication-text">
+                <p class="dedication-date">Enero 2026</p>
+                <p>"Este libro está dedicado a Lili, a María Aurora y a la memoria de la abuela Amelia. Mujeres
+                    extraordinarias que han hecho de la cocina un lenguaje de amor y de recuerdos imborrables.</p>
+                <p>A Lili y la abuela Amelia, que siguen vivas en cada recuerdo y en cada receta. Vuestra herencia es el
+                    cariño y el sabor de nuestra historia.</p>
+                <p>Y a ti, Mari, que sigues aquí con nosotros, siendo el alma de esta familia. Gracias por tu presencia
+                    constante, por mantener viva la tradición de tu madre y por enseñarnos cada día que el mejor
+                    ingrediente es el cariño a través del cuidado a nosotros y a tus nietos. Este libro celebra vuestro
+                    legado y la fortuna de seguir compartiendo la vida y la mesa contigo."</p>
+            </div>
+
+            <div class="biography-grid">
+                <!-- Lili's Bio -->
+                <div class="bio-card">
+                    <img src="assets/lili_profile.png" alt="Lili" class="bio-image">
+                    <h3>Maria Luisa (Lili)</h3>
+                    <p>Nacida en <strong>Sevilla</strong>, Lili fue una mujer pionera. Licenciada en
+                        <strong>Química</strong>, ejerció con pasión como profesora hasta su jubilación, inculcando el
+                        amor por el saber.
+                    </p>
+                    <p>En Úbeda conoció a Alfonso, su compañero de vida. Aunque ella ya no está con nosotros, su amor y
+                        memoria permanecen vivos en toda la familia.</p>
+                    <p>Era la orgullosa madre de <strong>Andrés, Alfonso y Manolo</strong>. Su cocina, precisa como la
+                        química y cálida como su tierra sevillana, es el corazón de su hogar.</p>
+                    <a href="javascript:void(0)" class="btn-text read-story" onclick="openBio('lili')">Leer historia
+                        &rarr;</a>
+                </div>
+
+                <!-- Mari's Bio -->
+                <div class="bio-card">
+                    <img src="assets/mari_frame.png" alt="Mari" class="bio-image">
+                    <h3>María Aurora (Mari)</h3>
+                    <p>Natural de <strong>Granada</strong>, Mari convirtió la cocina en su lenguaje del amor. Sus
+                        platos, siempre abundantes y llenos de sabor, reunían a la familia cada domingo.</p>
+                    <p>Orgullosa madre de <strong>Javi, Cintia e Irene</strong>. Su risa y sus guisos son el mejor
+                        legado que nos deja, enseñándonos que la felicidad se cocina a fuego lento.</p>
+                    <a href="javascript:void(0)" class="btn-text read-story" onclick="openBio('mari')">Leer historia
+                        &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipes Grid (Placeholder for now) -->
+        <section id="recipes" class="recipe-grid-section">
+            <h2 class="section-title">Nuestras Recetas</h2>
+
+            <!-- Abuela Filter Tabs -->
+            <div class="abuela-tabs">
+                <button class="tab-btn active" data-abuela="Mari">Recetas de Mari</button>
+                <button class="tab-btn" data-abuela="Lili">Recetas de Lili</button>
+                <button class="tab-btn" data-abuela="Amelia">Recetas de Amelia</button>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filter-container">
+                <button class="category-btn active" data-category="all">Todas</button>
+                <!-- Categories injected by JS -->
+            </div>
+
+            <div class="recipe-grid" id="recipeGrid">
+                <!-- Recipes will be injected here by JS -->
+                <div class="empty-state">
+                    <p>Cargando los secretos de la cocina...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Detail Modal -->
+        <div id="recipeModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content injected by JS -->
+                </div>
+                <!-- Original Reference Section -->
+                <div class="modal-footer original-reference">
+                    <p>Autenticidad: <a href="#" id="originalLink" target="_blank">Ver manuscrito original &rarr;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biography Modal -->
+        <div id="bioModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeBioModal()">&times;</span>
+                <h2 id="bioModalTitle"></h2>
+                <div class="modal-body" id="bioModalBody">
+                    <!-- Content injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Viewer Modal -->
+        <div id="imageViewerModal" class="modal image-viewer-modal">
+            <span class="close-btn" onclick="closeImageViewer()">&times;</span>
+            <div class="image-viewer-content">
+                <img id="fullSizeImage" src="" alt="Manuscrito original">
+            </div>
+            <div class="image-viewer-controls">
+                <button onclick="rotateImage(-90)" title="Girar Izquierda">↺</button>
+                <button onclick="zoomImage()" title="Zoom">🔍</button>
+                <button onclick="rotateImage(90)" title="Girar Derecha">↻</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Recetas de las Abuelas. Hecho con ❤️.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

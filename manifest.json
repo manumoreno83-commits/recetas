@@ -1,0 +1,16 @@
+{
+  "name": "La Cocina de Lili y Mari",
+  "short_name": "La Cocina",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F9F5EA",
+  "theme_color": "#C67142",
+  "description": "Una colección digital de recetas familiares.",
+  "icons": [
+    {
+      "src": "assets/placeholder.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
