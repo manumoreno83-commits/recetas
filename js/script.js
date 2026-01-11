@@ -1830,7 +1830,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryContainer = document.querySelector('.category-filter-container');
 
     // State
-    let currentAbuela = 'Mari';
+    let currentAbuela = 'all';
     let currentCategory = 'all';
     let currentSearchTerm = '';
 
@@ -1854,12 +1854,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html += `<button class="category-btn ${currentCategory === cat ? 'active' : ''}" data-category="${cat}">${cat}</button>`;
         });
 
-        // ONLY show the "Todas las recetas" category button if currentAbuela is 'all'
-        // OR as a way to reset if needed? Actually user said "quitar este boton de la segunda linea si hay una abuela"
-        if (currentAbuela === 'all') {
-            html += `<button class="category-btn ${currentCategory === 'all' ? 'active' : ''}" data-category="all">Todas las recetas (${recipes.length})</button>`;
-        }
-
+        // The "Todas las recetas" button in the second line is removed per user request
         categoryContainer.innerHTML = html;
 
         // Add Listeners
@@ -1880,7 +1875,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Initial Render
+    // Sorting and Randomizing logic
+    // Prominent recipes: Top 5 Lili + Top 5 Mari
+    const topLiliIds = ['lili_croquetas', 'lili_pudin_pescado', 'lili_andrajos', 'lili_empanada', 'lili_gazpachuelo'];
+    const topMariIds = ['20260111_01', '20260111_02', '20260111_04', '20260111_05', '1'];
+
+    function sortAndRandomize() {
+        const topLili = recipes.filter(r => topLiliIds.includes(r.id));
+        const topMari = recipes.filter(r => topMariIds.includes(r.id));
+        const rest = recipes.filter(r => !topLiliIds.includes(r.id) && !topMariIds.includes(r.id));
+
+        // Mixed top 10 (interleaved)
+        const top10 = [];
+        for (let i = 0; i < 5; i++) {
+            if (topLili[i]) top10.push(topLili[i]);
+            if (topMari[i]) top10.push(topMari[i]);
+        }
+
+        // Shuffle rest
+        const shuffledRest = rest.sort(() => Math.random() - 0.5);
+
+        // Replace original array content - using splice to keep the same reference if needed
+        const newOrder = [...top10, ...shuffledRest];
+        recipes.length = 0;
+        recipes.push(...newOrder);
+    }
+
+    sortAndRandomize();
     renderCategoryFilters();
 
     // Footer Count Update

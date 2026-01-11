@@ -1045,15 +1045,15 @@ footer {
 .recipe-accordion-item {
     background: white;
     border-radius: 12px;
-    margin-bottom: 0.75rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 0.35rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease;
 }
 
 .recipe-accordion-header {
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
