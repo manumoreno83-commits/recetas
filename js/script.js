@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const recipes = [
         {
             id: 'lili_croquetas',
-            title: "Croquetas Manteacos",
+            title: "Croquetas",
             description: "Croquetas de atún o restos, con bechamel cremosa y nuez moscada.",
             ingredients: [
                 "3 cucharadas colmadas de harina",
