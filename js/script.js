@@ -1826,7 +1826,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const recipeGrid = document.getElementById('recipeGrid');
-    const abuelaTabs = document.querySelectorAll('.tab-btn');
+    const abuelaTabs = document.querySelectorAll('.tab-btn[data-abuela]');
     const categoryContainer = document.querySelector('.category-filter-container');
 
     // State
@@ -2167,6 +2167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Update Icon/Text
                 viewIcon.textContent = isListView ? '⊞' : '☰';
+                viewToggleBtn.classList.toggle('active', isListView);
 
                 // Re-render to update structure (Accordion vs Card)
                 filterAndRender();
