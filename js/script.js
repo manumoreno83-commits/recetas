@@ -2021,18 +2021,16 @@ document.addEventListener('DOMContentLoaded', () => {
         lili: {
             title: "Historia de Maria Luisa (Lili)",
             content: `
-                <p>Maria Luisa, conocida por todos como Lili, nació en la luminosa Sevilla, una ciudad que marcó su carácter alegre y decidido. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar **Química**, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
-                <p>Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en Alfonso, formando una familia que fue su mayor orgullo.</p>
+                <p>Maria Luisa, conocida por todos como Lili, nació en la luminosa Sevilla, una ciudad que marcó su carácter alegre y decidido. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
+                <p>Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en Alfonso, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
                 <p>En la cocina, Lili no seguía recetas al pie de la letra. Su secreto era el "ojímetro", esa intuición que convertía cada plato en una creación única. Cada comida era un experimento de sabor que siempre resultaba en un éxito rotundo, reuniendo a su familia alrededor de una mesa llena de vida.</p>
             `
         },
         mari: {
             title: "Historia de María Aurora (Mari)",
             content: `
-                <p>María Aurora, nuestra querida Mari, nació en <strong>Écija</strong>, y aunque el destino la llevó lejos, siempre mantuvo la calidez de su tierra. Su historia de amor comenzó en <strong>Torremolinos</strong>, donde el azar —y su hermano Antonio— jugaron un papel clave.</p>
-                <p>Conoció a Fermín gracias a la amistad que este tenía con <strong>Antonio</strong>, coincidiendo cuando ambos trabajaban en el emblemático <strong>Hotel Meliá Torremolinos</strong>. Aquel encuentro marcó el inicio de una vida juntos llena de complicidad y cariño.</p>
-                <p>Para Mari, la cocina es el corazón de su hogar. Crió a Javi, Cintia e Irene entre el aroma de sus guisos y la alegría de una mesa siempre abierta. Una pasión que hoy comparte con sus nietos <strong>Luna, Pablo, Daniela y Leo</strong>.</p>
-                <p>Su legado es esa capacidad única de reunirnos y enseñarnos que la felicidad se cocina a fuego lento, con mimo y buen humor.</p>
+                <p>Natural de <strong>Écija</strong>, Mari convierte la cocina en su lenguaje del amor. Sus platos, siempre abundantes y llenos de sabor, reunen a la familia cada domingo y cada vez que hay ocasión.</p>
+                <p>Orgullosa madre de <strong>Javi, Cintia e Irene</strong>, y abuela de <strong>Luna, Pablo, Daniela y Leo</strong>. Junto a <strong>Fermin</strong>, su compañero de vida, su risa y sus guisos son el mejor legado que nos acompaña, enseñándonos que la felicidad se cocina a fuego lento.</p>
             `
         }
     };
