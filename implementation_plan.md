@@ -3,15 +3,15 @@
 This plan outlines the steps to deploy the "Recetas de las Abuelas" project to the web, making it accessible online.
 
 ## Phase 1: Version Control Setup
-- [ ] **Initialize Git**: (Already Done)
-- [ ] **Stage and Commit Files**: Add all project files to the local git repository.
+- [x] **Initialize Git**: (Already Done)
+- [x] **Stage and Commit Files**: Add all project files to the local git repository.
     - `git add .`
     - `git commit -m "Initial commit of Recetas de las Abuelas"`
 
 ## Phase 2: Remote Repository (GitHub)
 - [ ] **Create GitHub Repository**: Create a new empty repository on GitHub named `recetas-abuelas`.
 - [ ] **Link Remote**: Add the GitHub URL as the remote origin.
-    - `git remote add origin https://github.com/<your-username>/recetas-abuelas.git`
+    - `git remote add origin https://github.com/manumoreno83-commits/recetas-abuelas.git`
 - [ ] **Push Code**: Push the local master branch to GitHub.
     - `git push -u origin master`
 

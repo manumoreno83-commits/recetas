@@ -5,6 +5,174 @@ document.addEventListener('DOMContentLoaded', () => {
     // Recipe Data
     const recipes = [
         {
+            id: 'lili_mantecados_abuela_ana',
+            title: "Mantecados de la Abuela Ana",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Postres",
+            description: "Receta tradicional de mantecados con manteca, zumo de naranja y azúcar glas.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 2 tarrinas de Manteca blanca<br>
+                - 2 kg de Harina (repostería o trigo de buena calidad)<br>
+                - 1/2 vaso de Zumo de Naranja<br>
+                - Azúcar glas (para decorar)<br>
+                - Papel de seda o servilletas (para envolver)<br><br>
+                <strong>Preparación:</strong><br>
+                1. Precalentar el horno a 180ºC.<br>
+                2. Mezclar la manteca con la harina y el zumo poco a poco. Amasar hasta que las manos no se queden con grasa.<br>
+                3. Dividir la masa en dos trozos para trabajar mejor. Dejar reposar 2 o 3 horas (opcional).<br>
+                4. Espolvorear harina sobre la mesa y extender la masa con rodillo (altura de medio cm).<br>
+                5. Cortar con un vaso o copa pequeña y colocar en la bandeja de horno.<br>
+                6. Hornear hasta que se vean dorados.<br>
+                7. Sacar con cuidado (usar una pala), pasar por azúcar glas y envolver en el papel de seda.
+            `,
+            image: "assets/placeholder.png"
+        },
+        {
+            id: 'lili_pavo_trufao',
+            title: "Pavo Trufao",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Carnes",
+            description: "Fiambre de pavo con ciruelas, jamón y un toque de coñac. Un plato de fiesta.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 1/2 pavo (que no sea grande)<br>
+                - 1/4 kg de carne picada<br>
+                - Jamón picadito<br>
+                - Perejil, nuez moscada (un buen puñaito), sal, pimienta y ajo<br>
+                - Ciruelas sin hueso o pasas<br>
+                - Coñac (un buen chorreón)<br>
+                - 5 o 6 Huevos<br>
+                - Para cocer: Cebolla, puerro, apio, zanahoria<br>
+                - Adorno: Huevo hilado<br><br>
+                <strong>Preparación:</strong><br>
+                1. Cocer el pavo con puerro, apio y zanahoria (guardar el caldo para consomé). Desmenuzar la carne.<br>
+                2. Pochar una cebolla y sofreír la carne picada.<br>
+                3. En un bol, mezclar el pavo desmenuzado, la carne picada sofrita, el jamón, los huevos, el coñac, las ciruelas/pasas y todos los aliños (ajo, perejil, nuez moscada, sal, pimienta).<br>
+                4. Hacer cilindros con la mezcla envolviéndolos en papel transparente, apretando bien para que al cortar no se rompan.<br>
+                5. Hornear a 180ºC durante 15 minutos para que cuaje el huevo.<br>
+                6. Dejar enfriar poniendo peso encima (prensar).<br>
+                7. Servir frío adornado con huevo hilado.<br>
+                (Nota: Antiguamente se cocía en bolsas de tela en el caldo del pavo).
+            `,
+            image: "assets/placeholder.png"
+        },
+        {
+            id: '20260111_01',
+            title: "Paella",
+            abuela: "Mari",
+            author: "Mari",
+            category: "Arroces",
+            description: "La auténtica paella de Mari con pollo, magro y marisco.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 1/2 Kg Pollo, 1/4 Kg Magro<br>
+                - 2 o 3 Calamares pequeños, 5 o 6 Gambas, Almejas<br>
+                - Sofrito: Cebolla, Ajo, Pimiento rojo, Tomate<br>
+                - Arroz (1 puñado por persona)<br>
+                - Pimentón, Sal, Pimienta molida, Azafrán<br><br>
+                <strong>Preparación:</strong><br>
+                1. Lavar y cocer las almejas. Apartar. Freír el pollo y el magro y apartar.<br>
+                2. Hacer un sofrito con cebolla, ajo, pimiento rojo y tomate. Cuando esté listo, añadir los calamares limpios y troceados.<br>
+                3. Añadir pimentón (una vuelta rápida para que no amargue).<br>
+                4. Poner la carne y el sofrito en la paella. Añadir el agua de las almejas y el agua necesaria.<br>
+                5. Sazonar con sal, pimienta y azafrán. Cuando hierva unos 20 min, añadir el arroz.<br>
+                6. Dejar hervir 15 o 20 min (los últimos 5 al horno si es posible).
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/mari_paella_manuscript.jpg"
+        },
+        {
+            id: '20260111_02',
+            title: "Ternera al Oporto",
+            abuela: "Mari",
+            author: "Mari",
+            category: "Carnes",
+            description: "Redondo de ternera guisado con vino de Oporto y verduras.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 1 Kg Ternera (Redondo o Llana)<br>
+                - 2 Cebollas, 1 Zanahoria, 1 Cabeza de ajos<br>
+                - 1 Vaso Vino Oporto, Aceite de oliva<br>
+                - 1 Hoja de Laurel, 15-20 granos Pimienta, 4 Clavos, Azafrán<br><br>
+                <strong>Preparación:</strong><br>
+                1. En olla exprés, pochar las cebollas y zanahorias troceadas. Añadir la cabeza de ajos y la carne atada.<br>
+                2. Marear durante unos minutos. Añadir el resto de ingredientes, el vino y un vaso de agua.<br>
+                3. Sazonar, tapar y hervir durante 1 hora.<br>
+                4. Cuando la carne esté tierna, retirar ajos y laurel, y triturar la salsa.
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/mari_ternera_oporto_manuscript.jpg"
+        },
+        {
+            id: '20260111_03',
+            title: "Pollo en Pepitoria",
+            abuela: "Mari",
+            author: "Mari",
+            category: "Carnes",
+            description: "Pollo en salsa pepitoria con almendras y azafrán.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - Pollo troceado<br>
+                - Ajo en láminas, Perejil (abundante)<br>
+                - Canela en rama, Clavo, Pimienta en grano, Azafrán<br>
+                - Rodaja de limón (sin piel blanca)<br>
+                - 1 vasito Vino blanco, 1 vasito Agua<br><br>
+                <strong>Preparación:</strong><br>
+                1. Sofreír el pollo hasta dorar y reservar.<br>
+                2. Añadir a la olla exprés: ajo, perejil, especias, limón, vino y agua.<br>
+                3. Incorporar el pollo con un poquito de su aceite.<br>
+                4. Cocinar 15-20 minutos en olla exprés.
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/mari_pollo_pepitoria_manuscript.jpg"
+        },
+        {
+            id: '20260111_04',
+            title: "Lentejas",
+            abuela: "Mari",
+            author: "Mari",
+            category: "Cuchara",
+            description: "Guiso de lentejas estofadas con chorizo y morcilla.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - Lentejas (escurridas)<br>
+                - 1/2 Cebolla, Pimiento verde, 1 Tomate entero<br>
+                - Morcilla, Chorizo, 1 Cabeza de ajo<br>
+                - 1 Patata pelada, Zanahorias (opcional)<br>
+                - Sal, Cominos (limpios de palitos)<br><br>
+                <strong>Preparación:</strong><br>
+                1. Poner todos los ingredientes en crudo en la olla exprés.<br>
+                2. Cubrir con agua y cerrar.<br>
+                3. Poner a fuego fuerte. Cuando suba la válvula, bajar a fuego medio (6) y cocinar hasta que estén tiernas.
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/mari_lentejas_manuscript.jpg"
+        },
+        {
+            id: '20260111_05',
+            title: "Albóndigas en Salsa de Almendras",
+            abuela: "Mari",
+            author: "Mari",
+            category: "Carnes",
+            description: "Albóndigas caseras en una rica salsa de almendras.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 1 Kg Carne picada (750g ternera, 250g cerdo)<br>
+                - Ajos, Perejil, Pan duro, Huevos, Azafrán<br>
+                - Salsa: 2 Ajos, 1 rebanada Pan, 8-10 Almendras, Cebolla<br><br>
+                <strong>Preparación:</strong><br>
+                1. Mezclar la carne con ajos y perejil picados, pan triturado, 2 huevos, sal, pimienta y azafrán.<br>
+                2. Formar albóndigas, enharinar y freír. Reservar.<br>
+                3. Para la salsa: Freír 2 ajos, el pan y las almendras. Aparte sofreír cebolla.<br>
+                4. Triturar todo junto. Echar sobre las albóndigas, cubrir de agua y hervir 20 min.
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/mari_albondigas_almendras_manuscript.jpg"
+        },
+        {
             id: '1',
             title: "Pastel de Cierva",
             abuela: "Mari",
