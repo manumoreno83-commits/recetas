@@ -5,6 +5,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // Recipe Data
     const recipes = [
         {
+            id: 'lili_croquetas',
+            title: "Croquetas Manteacos",
+            description: "Croquetas de atún o restos, con bechamel cremosa y nuez moscada.",
+            ingredients: [
+                "3 cucharadas colmadas de harina",
+                "3/4 litro de leche",
+                "Un trozo de cebolla picadita",
+                "Nuez moscada, sal",
+                "Atún o cualquier relleno (restos carne/gambas)",
+                "Huevo y pan rallado"
+            ],
+            steps: [
+                "Sofreír la cebolla. Añadir harina a fuego lento y cocinar.",
+                "Añadir leche poco a poco sin dejar de mover hasta que espese y se desprenda de la pared.",
+                "Añadir sal, nuez moscada y el relleno.",
+                "Dejar enfriar, formar croquetas, pasar por huevo y pan rallado.",
+                "Freír hasta dorar."
+            ],
+            image: "assets/croquetas_caseras.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (2).jpeg",
+            category: "Entrante",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_pudin_pescado',
+            title: "Pudín de Pescado",
+            description: "Pastel suave de pescado y huevo, servido frío con mayonesa.",
+            ingredients: [
+                "1/2 kg pescado limpio",
+                "3 huevos",
+                "Un migajón de pan mojado en leche",
+                "Un chorreón de tomate frito",
+                "Sal, pimienta",
+                "Margarina (para molde) and Mahonesa (cobertura)"
+            ],
+            steps: [
+                "Cocer el pescado (hervor mínimo) y escurrir.",
+                "Batir pescado con huevos, pan, tomate, sal y pimienta (turmix).",
+                "Verter en molde untado de margarina.",
+                "Hornear a 180ºC baño maría o normal unos 25 min (hasta que aguja salga limpia).",
+                "No pasar de cocción. Dejar enfriar.",
+                "Cubrir con mahonesa y adornar."
+            ],
+            image: "assets/pudin_pescado.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.15.jpeg",
+            category: "Entrante",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
             id: 'lili_andrajos',
             title: "Andrajos de Alfonso",
             description: "Guiso tradicional de andrajos con marisco, verduras y hierbabuena.",
@@ -74,57 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "assets/gazpachuelo_lili.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (1).jpeg",
             category: "Guisos y Cuchara",
-            abuela: 'Lili',
-            rotation: 0
-        },
-        {
-            id: 'lili_croquetas',
-            title: "Croquetas Caseras",
-            description: "Croquetas de atún o restos, con bechamel cremosa y nuez moscada.",
-            ingredients: [
-                "3 cucharadas colmadas de harina",
-                "3/4 litro de leche",
-                "Un trozo de cebolla picadita",
-                "Nuez moscada, sal",
-                "Atún o cualquier relleno (restos carne/gambas)",
-                "Huevo y pan rallado"
-            ],
-            steps: [
-                "Sofreír la cebolla. Añadir harina a fuego lento y cocinar.",
-                "Añadir leche poco a poco sin dejar de mover hasta que espese y se desprenda de la pared.",
-                "Añadir sal, nuez moscada y el relleno.",
-                "Dejar enfriar, formar croquetas, pasar por huevo y pan rallado.",
-                "Freír hasta dorar."
-            ],
-            image: "assets/croquetas_caseras.png",
-            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (2).jpeg",
-            category: "Entrante",
-            abuela: 'Lili',
-            rotation: 0
-        },
-        {
-            id: 'lili_pudin_pescado',
-            title: "Pudín de Pescado",
-            description: "Pastel suave de pescado y huevo, servido frío con mayonesa.",
-            ingredients: [
-                "1/2 kg pescado limpio",
-                "3 huevos",
-                "Un migajón de pan mojado en leche",
-                "Un chorreón de tomate frito",
-                "Sal, pimienta",
-                "Margarina (para molde) and Mahonesa (cobertura)"
-            ],
-            steps: [
-                "Cocer el pescado (hervor mínimo) y escurrir.",
-                "Batir pescado con huevos, pan, tomate, sal y pimienta (turmix).",
-                "Verter en molde untado de margarina.",
-                "Hornear a 180ºC baño maría o normal unos 25 min (hasta que aguja salga limpia).",
-                "No pasar de cocción. Dejar enfriar.",
-                "Cubrir con mahonesa y adornar."
-            ],
-            image: "assets/pudin_pescado.png",
-            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.15.jpeg",
-            category: "Entrante",
             abuela: 'Lili',
             rotation: 0
         },
@@ -207,33 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "assets/pavo_trufao.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (3).jpeg",
             category: "Carnes",
-            abuela: 'Lili',
-            rotation: 0
-        },
-        {
-            id: 'lili_calamares_rellenos',
-            title: "Calamares Rellenos",
-            description: "Calamares rellenos de sus propios rabos y jamón, en salsa de almendras y azafrán.",
-            ingredients: [
-                "1/2 kg de calamares",
-                "Jamón picadito",
-                "Ajo, perejil, pimienta, sal",
-                "Cebolla, pimiento, tomate",
-                "Vino blanco y azafrán",
-                "Laurel"
-            ],
-            steps: [
-                "Limpiar calamares y picar los rabos chiquitos.",
-                "Mezclar rabos con jamón, ajo, perejil, pimienta y sal.",
-                "Rellenar los calamares y cerrar con palillo.",
-                "Pasar por harina y sofreír. Reservar.",
-                "Hacer sofrito de cebolla, pimiento y tomate. Triturar.",
-                "Añadir calamares al sofrito con vino, azafrán, agua y laurel.",
-                "Cocer hasta que estén tiernos en su salsa."
-            ],
-            image: "assets/calamares_rellenos.png",
-            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14.jpeg",
-            category: "Pescados y Mariscos",
             abuela: 'Lili',
             rotation: 0
         },
@@ -323,36 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/mantecados_abuela_ana.png"
         },
-        {
-            id: 'lili_pavo_trufao',
-            title: "Pavo Trufao",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Carnes",
-            description: "Fiambre de pavo con ciruelas, jamón y un toque de coñac. Un plato de fiesta.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                - 1/2 pavo (que no sea grande)<br>
-                - 1/4 kg de carne picada<br>
-                - Jamón picadito<br>
-                - Perejil, nuez moscada (un buen puñaito), sal, pimienta y ajo<br>
-                - Ciruelas sin hueso o pasas<br>
-                - Coñac (un buen chorreón)<br>
-                - 5 o 6 Huevos<br>
-                - Para cocer: Cebolla, puerro, apio, zanahoria<br>
-                - Adorno: Huevo hilado<br><br>
-                <strong>Preparación:</strong><br>
-                1. Cocer el pavo con puerro, apio y zanahoria (guardar el caldo para consomé). Desmenuzar la carne.<br>
-                2. Pochar una cebolla y sofreír la carne picada.<br>
-                3. En un bol, mezclar el pavo desmenuzado, la carne picada sofrita, el jamón, los huevos, el coñac, las ciruelas/pasas y todos los aliños (ajo, perejil, nuez moscada, sal, pimienta).<br>
-                4. Hacer cilindros con la mezcla envolviéndolos en papel transparente, apretando bien para que al cortar no se rompan.<br>
-                5. Hornear a 180ºC durante 15 minutos para que cuaje el huevo.<br>
-                6. Dejar enfriar poniendo peso encima (prensar).<br>
-                7. Servir frío adornado con huevo hilado.<br>
-                (Nota: Antiguamente se cocía en bolsas de tela en el caldo del pavo).
-            `,
-            image: "assets/pavo_trufao.png"
-        },
+
         {
             id: '20260111_01',
             title: "Paella",
@@ -400,29 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "assets/ternera_oporto.png",
             originalImage: "assets/mari_ternera_oporto_manuscript.jpg"
         },
-        {
-            id: '20260111_03',
-            title: "Pollo en Pepitoria",
-            abuela: "Mari",
-            author: "Mari",
-            category: "Carnes",
-            description: "Pollo en salsa pepitoria con almendras y azafrán.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                - Pollo troceado<br>
-                - Ajo en láminas, Perejil (abundante)<br>
-                - Canela en rama, Clavo, Pimienta en grano, Azafrán<br>
-                - Rodaja de limón (sin piel blanca)<br>
-                - 1 vasito Vino blanco, 1 vasito Agua<br><br>
-                <strong>Preparación:</strong><br>
-                1. Sofreír el pollo hasta dorar y reservar.<br>
-                2. Añadir a la olla exprés: ajo, perejil, especias, limón, vino y agua.<br>
-                3. Incorporar el pollo con un poquito de su aceite.<br>
-                4. Cocinar 15-20 minutos en olla exprés.
-            `,
-            image: "assets/pollo_pepitoria_mari.png",
-            originalImage: "assets/mari_pollo_pepitoria_manuscript.jpg"
-        },
+
         {
             id: '20260111_04',
             title: "Lentejas",
@@ -1628,27 +1550,7 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "assets/placeholder.png",
             originalImage: "assets/20251204_185037.jpg"
         },
-        {
-            id: 'lili_1',
-            title: "Croquetas",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Entrantes",
-            description: "Croquetas caseras con el toque especial de Lili. Cremosas y doraditas.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                3 cucharadas con colmo de harina<br>
-                3/4 de litro de leche<br>
-                Cebolla un trozo<br>
-                Nuez moscada<br>
-                Atún o cualquier relleno de restos de carne o gambas<br>
-                Chispa de sal<br>
-                Culo de cacharro de aceite<br><br>
-                <strong>Como se hace:</strong><br>
-                Se sofríe la cebolla picadita se añade la harina con fuego lento y se mezcla después se añade la leche sin dejar de mover y espesa la masa y se sigue moviendo hasta que cuece y cuando se desprende de la pared ya esta cocida y se añade la sal y el relleno  así como la nuez moscada poquita se deja enfriar la masa y se forman las croquetas, pasándolas por huevo pan rallado y se fríen que queden doraditas
-            `,
-            image: "assets/croquetas_caseras.png"
-        },
+
         {
             id: 'lili_2',
             title: "Tortilla patatas",
@@ -1686,31 +1588,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/placeholder.png"
         },
-        {
-            id: 'lili_4',
-            title: "Pudín de pescado",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Pescados",
-            description: "Pudín suave de pescado, ideal para servir frío con mahonesa.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                1/2 Kg de pescado sin piel ni espinas<br>
-                3 huevos<br>
-                Un migajón de pan mojado en leche<br>
-                Un chorreon de tomate frito o un tetra brik  pequeño<br>
-                Pizca sal y pimienta<br><br>
-                <strong>Como se hace:</strong><br>
-                Se unta un molde de margarina y se reserva<br>
-                Se cuece el pescado pero sólo un hervor lo mínimo<br>
-                Se echa sin agua con todo lo demás en la mini Pimex o batidora<br>
-                Se añade todo al molde y se mete en el horno hasta que salga la aguja limpia<br>
-                La temperatura 180 C  se tarda unos 25 minutos<br>
-                No conviene que se pase para que no quede seco<br>
-                Se cubre de mahonesa y se adorna como se quiera.....tomatitos,lechuga.    Etc
-            `,
-            image: "assets/pudin_pescado.png"
-        },
+
         {
             id: 'lili_5',
             title: "Huevos rellenos",
@@ -1733,74 +1611,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/placeholder.png"
         },
-        {
-            id: 'lili_6',
-            title: "Empanada",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Salados",
-            description: "Empanada rápida y deliciosa con hojaldre y relleno de atún o carne.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                Dos plancha de hojaldre la cocinera o similar<br>
-                Un sofrito de tomate pimiento y cebolla o lata que hay en mercadona<br>
-                Atún dos latas o carne picada según se quiera .Si es carne se sofríe con sal pimienta, perejil y algo de ajo.<br>
-                Dos huevos duros a cachitos<br><br>
-                <strong>Como se hace:</strong><br>
-                Se extiende la plancha ayudada de harina con el rodillo,se coloca en la placa del horno que se le pone papel de horno o de aluminio<br>
-                Se echa el relleno y se cubre de la otra plancha se cierra por los bordes si sabes se puede hacer como una especie de trencita<br>
-                Se hacen respiraderos con un tenedor pinchando por encima y tb un huevo batido, si no tienes brocha se puede hacer con una servilleta de papel mojandola en el huevo<br>
-                Se mete en el horno a 180 y cuando este dorado se saca
-            `,
-            image: "assets/empanada_hojaldre.png"
-        },
-        {
-            id: 'lili_7',
-            title: "Albóndigas",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Carnes",
-            description: "Albóndigas caseras en salsa de tomate y pimiento.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                Carne picada mitad ternera y mitad cerdo como 3/4 de Kg.<br>
-                Dos huevos<br>
-                Sal,pimienta,perejil y un poco de pan rallado<br>
-                Se le pude poner beicon picadito o jamón.....<br>
-                Harina para formar las bolas<br>
-                Tómate frito<br>
-                Una cebolla<br>
-                Un pimiento<br>
-                Aceite<br><br>
-                <strong>Como se hace:</strong><br>
-                Se hace un sofrito con la cebolla el pimiento y el tomate y se aparta en una cacerola, si se quiere se tritura<br>
-                La carne se mezcla con lo dicho y se hacen la bolas no demasiado apretadas para que cale el sabor de la salsa, ayudándote de la harina<br>
-                Se fríen poco sólo doradas y se añaden a la cacerola con un chorreon de vino blanco o el que tengas y algo de agua poca y una hoja de laurel y que cuece un ratito a fuego lento.
-            `,
-            image: "assets/albondigas_caseras.png"
-        },
-        {
-            id: 'lili_8',
-            title: "Lasaña",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Pastas",
-            description: "Lasaña clásica con bechamel y un toque de orégano.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                Placas de lasaña precocidas<br>
-                Carne picada mitad cerdo mitad ternera 3/4 Kg.<br>
-                Ajo,perejil,sal  y una cebolla<br>
-                Bechamel medio litro o más<br>
-                Tomate frito medio litro o tetra brik grande<br>
-                Orégano y queso rallado<br><br>
-                <strong>Como se hace:</strong><br>
-                Se echan las placas en agua hasta que estén blancas  y se escurren en un paño<br>
-                Se sofríe la carne con la cebolla pochada sal ajo y perejil<br>
-                Se van colocando capas de lasaña,capa de carne y de tomate que previamente se ha podido mezclar con la carne al final se echa la bechamel cubriéndolo todo y se añade el queso y el orégano y a la hora de comer se mete a gratinar
-            `,
-            image: "assets/lasana_carne.png"
-        },
+
+
+
         {
             id: 'lili_9',
             title: "Flan",
@@ -1868,30 +1681,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/placeholder.png"
         },
-        {
-            id: 'lili_12',
-            title: "Calamares rellenos",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Pescados",
-            description: "Calamares rellenos de jamón y sus propios tentáculos en salsa clásica.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                1/2 kg de calamares,depende del número de personas<br>
-                Jamón picadito<br>
-                Ajo,perejil,pimienta y sal<br>
-                Cebolla,pimiento y tomate<br>
-                Vino blanco y azafrán<br><br>
-                <strong>Como se hace:</strong><br>
-                Se limpian los calamares y se dejan enteros ,picando los rabos chiquitos<br>
-                Se mezclan los rabos con el jamón ,el ajo,perejil,pimienta y chispa de sal<br>
-                Se rellenan los calamares sujetando la boca con un palillo<br>
-                Se pasan por harina y se sofríen<br>
-                Tb se hace aparte el clásico sofrito de cebolla,pimiento y tomate y se tritura<br>
-                Al sofrito se le añaden los calamares y se ponen a cocer con vino ,azafrán y un poquito de agua.....hasta qué se queden en su salsa y estén tiernos.....se me olvidaba añadir hoja de laurel
-            `,
-            image: "assets/calamares_rellenos.png"
-        },
+
         {
             id: 'lili_13',
             title: "Espinacas con bechamel",
@@ -2002,6 +1792,7 @@ document.addEventListener('DOMContentLoaded', () => {
     recipes.forEach(r => {
         // Default assignment
         if (!r.abuela) r.abuela = "Mari";
+        if (!r.author) r.author = r.abuela;
         if (r.author === "Receta de la Abuela") r.author = "Mari";
 
         // Reassign to Amelia if in loop
@@ -2045,27 +1836,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Extract Categories for Filters
     function renderCategoryFilters() {
-        // Get all categories used by the current Abuela (or globally, but per-abuela is nicer? No, global is easier for now)
-        // Let's do global categories found in the data
-        const categories = new Set(recipes.map(r => r.category).filter(Boolean));
+        // Categories for current abuela (or all if currentAbuela is 'all')
+        const filteredForCategories = currentAbuela === 'all'
+            ? recipes
+            : recipes.filter(r => r.abuela === currentAbuela);
 
-        // We want 'Todas' first, then the rest sorted
-        let html = `<button class="category-btn ${currentCategory === 'all' ? 'active' : ''}" data-category="all">Todas las recetas (${recipes.length})</button>`;
+        const categories = new Set(filteredForCategories.map(r => r.category).filter(Boolean));
 
+        // Update Total Recipes Tab count
+        const totalTab = document.getElementById('totalRecipesTab');
+        if (totalTab) {
+            totalTab.textContent = `Todas las Recetas (${recipes.length})`;
+        }
+
+        let html = '';
         Array.from(categories).sort().forEach(cat => {
             html += `<button class="category-btn ${currentCategory === cat ? 'active' : ''}" data-category="${cat}">${cat}</button>`;
         });
 
+        // ONLY show the "Todas las recetas" category button if currentAbuela is 'all'
+        // OR as a way to reset if needed? Actually user said "quitar este boton de la segunda linea si hay una abuela"
+        if (currentAbuela === 'all') {
+            html += `<button class="category-btn ${currentCategory === 'all' ? 'active' : ''}" data-category="all">Todas las recetas (${recipes.length})</button>`;
+        }
+
         categoryContainer.innerHTML = html;
 
         // Add Listeners
-        document.querySelectorAll('.category-btn').forEach(btn => {
+        categoryContainer.querySelectorAll('.category-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
-                // Remove active from all category buttons
-                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
+                const newCat = e.target.dataset.category;
 
-                currentCategory = e.target.dataset.category;
+                // Toggle logic: if clicking same active category, go back to 'all'
+                if (currentCategory === newCat && newCat !== 'all') {
+                    currentCategory = 'all';
+                } else {
+                    currentCategory = newCat;
+                }
+
+                renderCategoryFilters(); // Re-render to update active states
                 filterAndRender();
             });
         });
@@ -2090,8 +1899,9 @@ document.addEventListener('DOMContentLoaded', () => {
             tab.classList.add('active');
 
             currentAbuela = tab.dataset.abuela;
+            currentCategory = 'all'; // Reset category when changing abuela
 
-            // Optional: Reset category or keep it? Keeping it feels better.
+            renderCategoryFilters();
             filterAndRender();
         });
     });
@@ -2100,7 +1910,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!recipeGrid) return;
 
         const filteredRecipes = recipes.filter(r => {
-            // Global Search Priority
+            // Global Search Priority overrides tabs
             if (currentSearchTerm) {
                 const term = currentSearchTerm.toLowerCase();
                 return r.title.toLowerCase().includes(term) ||
@@ -2110,7 +1920,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     r.author.toLowerCase().includes(term);
             }
 
-            const matchAbuela = r.abuela === currentAbuela;
+            const matchAbuela = currentAbuela === 'all' || r.abuela === currentAbuela;
             const matchCategory = currentCategory === 'all' || r.category === currentCategory;
             return matchAbuela && matchCategory;
         });
@@ -2357,6 +2167,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Update Icon/Text
                 viewIcon.textContent = isListView ? '⊞' : '☰';
+
+                // Re-render to update structure (Accordion vs Card)
+                filterAndRender();
             }
         });
     }
@@ -2379,26 +2192,92 @@ function renderRecipes(recipes, container) {
         return;
     }
 
+    const isListView = container.classList.contains('list-view');
+
     container.innerHTML = recipes.map(recipe => {
         const bgColor = getWarmColor(recipe.title);
-        // Only use placeholder image if it explicitly says placeholder, otherwise trust the image path
-        // But we add a nice background color anyway just in case it's transparent or loading
         const isPlaceholder = recipe.image.includes('placeholder');
 
+        if (isListView) {
+            // Accordion List View Structure
+            let content = recipe.fullRecipe;
+            if (!content && recipe.ingredients && recipe.steps) {
+                const ingList = recipe.ingredients.map(i => `<li>${i}</li>`).join('');
+                const stepList = recipe.steps.map(s => `<li>${s}</li>`).join('');
+                content = `
+                    <div class="recipe-accordion-details">
+                        <div class="column">
+                            <h4>Ingredientes</h4>
+                            <ul>${ingList}</ul>
+                        </div>
+                        <div class="column">
+                            <h4>Preparación</h4>
+                            <ol>${stepList}</ol>
+                        </div>
+                    </div>
+                `;
+            } else if (content) {
+                // If it's HTML string, we try to wrap it in 2 columns if it follows standard pattern
+                // For now, simple wrap
+                content = `<div class="recipe-accordion-details-flat">${content}</div>`;
+            }
+
+            return `
+                <div class="recipe-accordion-item" data-id="${recipe.id}">
+                    <div class="recipe-accordion-header">
+                        <div class="header-main">
+                            <span class="recipe-title">${recipe.title}</span>
+                            <span class="recipe-author">De: ${recipe.author}</span>
+                        </div>
+                        <div class="header-side">
+                            <span class="recipe-tag">${recipe.category}</span>
+                            <span class="accordion-icon">v</span>
+                        </div>
+                    </div>
+                    <div class="recipe-accordion-content">
+                        ${content || `<p>${recipe.description}</p>`}
+                        <div class="accordion-actions">
+                            ${recipe.originalImage ? `<button class="btn-text" onclick="event.stopPropagation(); window.openImageViewer('${recipe.originalImage}', ${recipe.rotation || 0})">Ver Manuscrito Original</button>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
         return `
-        <article class="recipe-card fade-in-up" data-id="${recipe.id}">
-            <div class="recipe-image" style="background-image: url('${recipe.image}'); background-color: ${bgColor};">
-                ${isPlaceholder ? '<div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; opacity:0.3; font-size:3rem;">🍽️</div>' : ''}
-            </div>
-            <div class="recipe-content">
-                <span class="recipe-tag">${recipe.category}</span>
-                <h3 class="recipe-title">${recipe.title}</h3>
-                <p class="recipe-author">De: ${recipe.author}</p>
-                <p class="recipe-desc">${recipe.description}</p>
-                <a href="#" class="btn-text">Ver Receta &rarr;</a>
-            </div>
-        </article>
-    `}).join('');
+            <article class="recipe-card fade-in-up" data-id="${recipe.id}">
+                <div class="recipe-image" style="background-image: url('${recipe.image}'); background-color: ${bgColor};">
+                    ${isPlaceholder ? '<div style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; opacity:0.3; font-size:3rem;">🍽️</div>' : ''}
+                </div>
+                <div class="recipe-content">
+                    <span class="recipe-tag">${recipe.category}</span>
+                    <h3 class="recipe-title">${recipe.title}</h3>
+                    <p class="recipe-author">De: ${recipe.author}</p>
+                    <p class="recipe-desc">${recipe.description}</p>
+                    <a href="#" class="btn-text">Ver Receta &rarr;</a>
+                </div>
+            </article>
+        `;
+    }).join('');
+
+    // Add click events for accordion if in list view
+    if (isListView) {
+        container.querySelectorAll('.recipe-accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const wasActive = item.classList.contains('active');
+
+                // Close all others
+                container.querySelectorAll('.recipe-accordion-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle current
+                if (!wasActive) {
+                    item.classList.add('active');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+        });
+    }
 }
 
 // Global close function for bio modal when clicking outside
