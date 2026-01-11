@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         {
             id: '20260111_01',
-            title: "Paella",
+            title: "Paella de Mari",
             abuela: "Mari",
             author: "Mari",
             category: "Arroces",

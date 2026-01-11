@@ -15,11 +15,60 @@
 - [x] **Mejora Móvil**: Ajuste de fuentes y márgenes para dispositivos pequeños.
 
 ## Tareas Pendientes ⏳
-- [ ] **Generación de Imágenes Rústicas** (Esperando reset de cuota en ~1 hora):
-    - Cordero guisado
-    - Migas
-    - Redondo a la mostaza
-    - Arroz negro
-    - Recetas de Lili con placeholder
-    - Recetas de Amelia (todas menos una)
-- [ ] **Actualización de `js/script.js`**: Vincular las nuevas imágenes generadas.
+
+### 🔴 Prioridad Alta
+- [ ] **Commit de Cambios Pendientes**: Hay cambios sin guardar en Git:
+    - `css/styles.css` - modificado
+    - `js/script.js` - modificado
+    - Hacer commit y push a GitHub para actualizar Netlify automáticamente
+
+- [ ] **Crear Carpeta de Familia**: La carpeta `assets/familia/` no existe
+    - Crear directorio `assets/familia/`
+    - Añadir 6 fotos familiares (foto1.jpg - foto6.jpg)
+    - Estas imágenes se muestran en el carrusel de la página principal
+
+- [ ] **Icono de la App (PWA)**: 
+    - El archivo `manifest.json` y el HTML referencian `assets/placeholder.png` como icono
+    - Crear o seleccionar un icono apropiado para la app (512x512px recomendado)
+    - Actualizar referencias en `manifest.json` y línea 24 de `index.html`
+
+### 🟡 Prioridad Media
+- [ ] **Verificación de Imágenes**: Revisar que todas las recetas tengan imágenes correctas
+    - Confirmar que no hay referencias a `loremflickr` o URLs externas
+    - Verificar que todas las imágenes en `assets/` estén siendo utilizadas
+    - Comprobar que no falten imágenes para ninguna receta
+
+- [ ] **Optimización de Imágenes**:
+    - Las imágenes manuscritas (JPG) tienen tamaños grandes (6-7 MB cada una)
+    - Considerar compresión para mejorar tiempos de carga
+    - Especialmente importante para la versión móvil/PWA
+
+- [ ] **Revisión de Contenido**:
+    - Verificar que todas las biografías estén completas y correctas
+    - Confirmar que la dedicatoria refleja el contenido deseado
+    - Revisar que los nombres de recetas sean consistentes
+
+### 🟢 Prioridad Baja / Mejoras Futuras
+- [ ] **SEO y Metadatos**:
+    - Añadir meta tags Open Graph para compartir en redes sociales
+    - Crear favicon personalizado (actualmente usa placeholder)
+    - Mejorar descripción meta para SEO
+
+- [ ] **Accesibilidad**:
+    - Revisar contraste de colores para WCAG compliance
+    - Añadir atributos ARIA donde sea necesario
+    - Verificar navegación por teclado
+
+- [ ] **Analytics** (Opcional):
+    - Considerar añadir Google Analytics o similar
+    - Monitorear qué recetas son más visitadas
+
+- [ ] **Backup de Manuscritos Originales**:
+    - Asegurar que todos los manuscritos originales estén respaldados
+    - Documentar la correspondencia entre imágenes generadas y manuscritos
+
+### 📝 Notas Técnicas
+- **Deployment**: Configurado en Netlify (`s-lili-mari.netlify.app`)
+- **Repository**: Conectado a GitHub con auto-deploy
+- **PWA**: Service Worker configurado (`sw.js`) para funcionalidad offline
+- **Estado actual**: Funcional pero con cambios sin publicar

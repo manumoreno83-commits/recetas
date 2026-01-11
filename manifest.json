@@ -8,7 +8,7 @@
   "description": "Una colección digital de recetas familiares.",
   "icons": [
     {
-      "src": "assets/placeholder.png",
+      "src": "assets/app-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
