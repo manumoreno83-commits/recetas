@@ -1876,27 +1876,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Sorting and Randomizing logic
-    // Prominent recipes: Top 5 Lili + Top 5 Mari
-    const topLiliIds = ['lili_croquetas', 'lili_pudin_pescado', 'lili_andrajos', 'lili_empanada', 'lili_gazpachuelo'];
-    const topMariIds = ['20260111_01', '20260111_02', '20260111_04', '20260111_05', '1'];
+    // Prominent recipes: Top 6 Lili + Top 6 Mari/Amelia (12 total = 2 rows of 6)
+    const topLiliIds = ['lili_croquetas', 'lili_pudin_pescado', 'lili_andrajos', 'lili_empanada', 'lili_gazpachuelo', 'lili_pavo_trufao'];
+    const topMariIds = ['20260111_01', '20260111_02', '20260111_04', '20260111_05', '1', '20251204_184404']; // Includes Albóndigas de Bacalao
 
     function sortAndRandomize() {
         const topLili = recipes.filter(r => topLiliIds.includes(r.id));
         const topMari = recipes.filter(r => topMariIds.includes(r.id));
         const rest = recipes.filter(r => !topLiliIds.includes(r.id) && !topMariIds.includes(r.id));
 
-        // Mixed top 10 (interleaved)
-        const top10 = [];
-        for (let i = 0; i < 5; i++) {
-            if (topLili[i]) top10.push(topLili[i]);
-            if (topMari[i]) top10.push(topMari[i]);
+        // Mixed top 12 (interleaved: Lili, Mari/Amelia, Lili, Mari/Amelia...)
+        const top12 = [];
+        for (let i = 0; i < 6; i++) {
+            if (topLili[i]) top12.push(topLili[i]);
+            if (topMari[i]) top12.push(topMari[i]);
         }
 
         // Shuffle rest
         const shuffledRest = rest.sort(() => Math.random() - 0.5);
 
         // Replace original array content - using splice to keep the same reference if needed
-        const newOrder = [...top10, ...shuffledRest];
+        const newOrder = [...top12, ...shuffledRest];
         recipes.length = 0;
         recipes.push(...newOrder);
     }
@@ -2021,16 +2021,18 @@ document.addEventListener('DOMContentLoaded', () => {
         lili: {
             title: "Historia de Maria Luisa (Lili)",
             content: `
-                <p>Maria Luisa, conocida por todos como Lili, nació en la luminosa Sevilla, una ciudad que marcó su carácter alegre y decidido. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
-                <p>Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en Alfonso, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
-                <p>En la cocina, Lili no seguía recetas al pie de la letra. Su secreto era el "ojímetro", esa intuición que convertía cada plato en una creación única. Cada comida era un experimento de sabor que siempre resultaba en un éxito rotundo, reuniendo a su familia alrededor de una mesa llena de vida.</p>
+                <p style="text-align: justify;">Maria Luisa, conocida por todos como Lili, nació en la luminosa Sevilla, una ciudad que marcó su carácter alegre y decidido. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
+                <p style="text-align: justify;">Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en <strong>Alfonso</strong>, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
+                <p style="text-align: justify;">En la cocina, Lili no seguía recetas al pie de la letra. Su secreto era el "ojímetro", esa intuición que convertía cada plato en una creación única. Cada comida era un experimento de sabor que siempre resultaba en un éxito rotundo, reuniendo a su familia alrededor de una mesa llena de vida.</p>
+                <p style="text-align: justify;">Aunque Lili ya no está con nosotros, su legado vive en sus seis nietos: <strong>Ana, Carlos, Andrea, Vera, Daniela y Leo</strong>. Ellos no llegaron a conocerla en persona, pero la conocen a través de sus recetas, de las historias que se cuentan en cada reunión familiar, y del amor que sembró en cada generación. Su cocina sigue siendo el puente que une a la familia, manteniendo vivo su espíritu en cada plato que se comparte.</p>
             `
         },
         mari: {
             title: "Historia de María Aurora (Mari)",
             content: `
-                <p>Natural de <strong>Écija</strong>, Mari convierte la cocina en su lenguaje del amor. Sus platos, siempre abundantes y llenos de sabor, reunen a la familia cada domingo y cada vez que hay ocasión.</p>
-                <p>Orgullosa madre de <strong>Javi, Cintia e Irene</strong>, y abuela de <strong>Luna, Pablo, Daniela y Leo</strong>. Junto a <strong>Fermin</strong>, su compañero de vida, su risa y sus guisos son el mejor legado que nos acompaña, enseñándonos que la felicidad se cocina a fuego lento.</p>
+                <p style="text-align: justify;">Natural de <strong>Écija</strong>, Mari convierte la cocina en su lenguaje del amor. Sus platos, siempre abundantes y llenos de sabor, reúnen a la familia cada domingo y cada vez que hay ocasión.</p>
+                <p style="text-align: justify;">Orgullosa madre de <strong>Javi, Cintia e Irene</strong>, y abuela de <strong>Luna, Pablo, Daniela y Leo</strong>. Junto a <strong>Fermín</strong>, su compañero de vida, su risa y sus guisos son el mejor legado que nos acompaña, enseñándonos que la felicidad se cocina a fuego lento.</p>
+                <p style="text-align: justify;">Mari sigue siendo el alma de la familia, manteniendo viva la tradición de su madre y creando nuevos recuerdos en cada comida. Su cocina es un lugar de encuentro, risas y amor, donde cada plato cuenta una historia y cada reunión fortalece los lazos familiares.</p>
             `
         }
     };
