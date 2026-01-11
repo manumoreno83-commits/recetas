@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'lili_gazpachuelo',
-            title: "Gazpachuelo Malagueño",
+            title: 'Gazpachuelo "en blanco"',
             description: "Sopa caliente con mayonesa, pescado, gambas y patatas.",
             ingredients: [
                 "1/2 kg pescado sin piel ni espinas",
@@ -1917,33 +1917,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/placeholder.png"
         },
-        {
-            id: 'lili_14',
-            title: "Gazpachuelo",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Sopas",
-            description: "Sopa típica malagueña de pescado con base de mahonesa.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                1/2 de pescado sin piel ni espinas<br>
-                Un puñado de gambas<br>
-                Otro de almejas<br>
-                Tres patatas a trocitos o más según el número de personas<br>
-                Una cebolla<br>
-                Mahonesa no muy espesa con limón o un chorrito de vinagre<br>
-                Pizca sal<br><br>
-                <strong>Como se hace:</strong><br>
-                Se pone agua a hervir 3/4 litro de agua<br>
-                Se pica muy pequeña la cebollas<br>
-                Se añaden las patatas<br>
-                La sal<br>
-                Cuando estén tiernas se añade el pescado pero que hierva una sola vez<br>
-                Tb las gambas grudas y las almejas que se cocieron antes para que estén peladas y el caldo se puede añadir colado<br>
-                A la hora de comer se le añade la mahonesa pero que el guiso no esté hirviendo pues se corta
-            `,
-            image: "assets/gazpachuelo_lili.png"
-        },
+
         {
             id: 'lili_15',
             title: "Mouse de Queso",
