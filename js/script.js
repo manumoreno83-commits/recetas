@@ -5,6 +5,325 @@ document.addEventListener('DOMContentLoaded', () => {
     // Recipe Data
     const recipes = [
         {
+            id: 'lili_andrajos',
+            title: "Andrajos de Alfonso",
+            description: "Guiso tradicional de andrajos con marisco, verduras y hierbabuena.",
+            ingredients: [
+                "Paquete de Andrajos",
+                "Tomate, pimiento, cebolla, coliflor (verduras variadas)",
+                "Calamares, gambas y almejas",
+                "Liebre o conejo (opcional, cocido aparte)",
+                "Hierbabuena, sal, pimienta, guindilla y azafrán"
+            ],
+            steps: [
+                "Hacer un sofrito 'a lo bestia' con todas las verduras y los calamares.",
+                "Pelar gambas y cocer cáscaras para caldo. Cocer almejas y reservar caldo.",
+                "Poner a hervir el sofrito con los caldos y añadir los andrajos (1 paquete para 4).",
+                "Añadir bastante hierbabuena, 1-2 guindillas y condimentos.",
+                "Al final añadir gambas, almejas peladas y el conejo si hay.",
+                "Es como un arroz pero con pasta (andrajos)."
+            ],
+            image: "assets/andrajos_alfonso.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13 (2).jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_empanada',
+            title: "Empanada de Hojaldre",
+            description: "Empanada rápida de hojaldre con atún o carne y huevo duro.",
+            ingredients: [
+                "2 planchas de hojaldre (La Cocinera o similar)",
+                "Sofrito de tomate, pimiento y cebolla",
+                "Atún (2 latas) o carne picada (sofrita previamente)",
+                "2 huevos duros a cachitos",
+                "1 huevo batido (para pintar)"
+            ],
+            steps: [
+                "Extender una plancha sobre la placa de horno con papel.",
+                "Echar el relleno (sofrito + atún/carne + huevo duro).",
+                "Cubrir con la otra plancha y cerrar los bordes (hacer trencita).",
+                "Pinchar con tenedor para respiraderos y pintar con huevo batido.",
+                "Hornear a 180ºC hasta que esté dorada."
+            ],
+            image: "assets/empanada_hojaldre.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13 (3).jpeg",
+            category: "Entrante",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_gazpachuelo',
+            title: "Gazpachuelo Malagueño",
+            description: "Sopa caliente con mayonesa, pescado, gambas y patatas.",
+            ingredients: [
+                "1/2 kg pescado sin piel ni espinas",
+                "Un puñado de gambas y almejas",
+                "3 patatas a trocitos",
+                "1 cebolla muy picada",
+                "Mahonesa (con limón o vinagre)",
+                "Sal y agua (3/4 litro)"
+            ],
+            steps: [
+                "Hervir el agua con la cebolla picadita, patatas y sal.",
+                "Cuando las patatas estén tiernas, añadir el pescado (solo un hervor).",
+                "Añadir gambas crudas y almejas (o cocidas aparte y colar caldo).",
+                "A la hora de comer, añadir la mahonesa con el guiso FUERA del fuego (para que no se corte)."
+            ],
+            image: "assets/gazpachuelo_lili.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (1).jpeg",
+            category: "Sopa",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_croquetas',
+            title: "Croquetas Caseras",
+            description: "Croquetas de atún o restos, con bechamel cremosa y nuez moscada.",
+            ingredients: [
+                "3 cucharadas colmadas de harina",
+                "3/4 litro de leche",
+                "Un trozo de cebolla picadita",
+                "Nuez moscada, sal",
+                "Atún o cualquier relleno (restos carne/gambas)",
+                "Huevo y pan rallado"
+            ],
+            steps: [
+                "Sofreír la cebolla. Añadir harina a fuego lento y cocinar.",
+                "Añadir leche poco a poco sin dejar de mover hasta que espese y se desprenda de la pared.",
+                "Añadir sal, nuez moscada y el relleno.",
+                "Dejar enfriar, formar croquetas, pasar por huevo y pan rallado.",
+                "Freír hasta dorar."
+            ],
+            image: "assets/croquetas_caseras.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (2).jpeg",
+            category: "Entrante",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_pudin_pescado',
+            title: "Pudín de Pescado",
+            description: "Pastel suave de pescado y huevo, servido frío con mayonesa.",
+            ingredients: [
+                "1/2 kg pescado limpio",
+                "3 huevos",
+                "Un migajón de pan mojado en leche",
+                "Un chorreón de tomate frito",
+                "Sal, pimienta",
+                "Margarina (para molde) and Mahonesa (cobertura)"
+            ],
+            steps: [
+                "Cocer el pescado (hervor mínimo) y escurrir.",
+                "Batir pescado con huevos, pan, tomate, sal y pimienta (turmix).",
+                "Verter en molde untado de margarina.",
+                "Hornear a 180ºC baño maría o normal unos 25 min (hasta que aguja salga limpia).",
+                "No pasar de cocción. Dejar enfriar.",
+                "Cubrir con mahonesa y adornar."
+            ],
+            image: "assets/pudin_pescado.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.15.jpeg",
+            category: "Entrante",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_albondigas',
+            title: "Albóndigas Caseras",
+            description: "Albóndigas caseras de carne mixta con salsa de vino blanco y verduras.",
+            ingredients: [
+                "3/4 kg carne picada (mitad ternera, mitad cerdo)",
+                "2 huevos",
+                "Sal, pimienta, perejil, pan rallado",
+                "Beicon o jamón picadito (opcional)",
+                "Harina",
+                "Tomate frito",
+                "1 cebolla, 1 pimiento",
+                "Aceite, Vino blanco, Laurel"
+            ],
+            steps: [
+                "Hacer un sofrito con la cebolla, pimiento y tomate. Apartar y triturar si se quiere.",
+                "Mezclar la carne con huevos, especias y pan rallado. Hacer bolas no muy apretadas.",
+                "Pasar por harina y freír hasta que estén doradas.",
+                "Poner en cacerola con el sofrito, chorreón de vino blanco, un poco de agua y laurel.",
+                "Cocer un ratito a fuego lento."
+            ],
+            image: "assets/albondigas_caseras.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (1).jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_lasana',
+            title: "Lasaña de Carne",
+            description: "Lasaña clásica con carne picada, tomate y gratinada con mucha bechamel.",
+            ingredients: [
+                "Placas de lasaña precocidas",
+                "3/4 kg carne picada (cerdo y ternera)",
+                "Ajo, perejil, sal, 1 cebolla",
+                "1/2 litro de bechamel (o más)",
+                "1/2 litro de tomate frito (o brik grande)",
+                "Orégano y queso rallado"
+            ],
+            steps: [
+                "Hidratar las placas en agua hasta que estén blancas y escurrir en paño.",
+                "Sofreír la carne con la cebolla pochada, sal, ajo y perejil.",
+                "Montar capas: lasaña, capa de carne (puede mezclarse con tomate).",
+                "Cubrir todo con bechamel, queso y orégano.",
+                "Gratinar en el horno."
+            ],
+            image: "assets/lasana_carne.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (2).jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_pavo_trufao',
+            title: "Pavo Trufao",
+            description: "Fiambre de pavo casero con ciruelas, huevo y un toque de coñac. Ideal para servir frío.",
+            ingredients: [
+                "1/2 pavo (no muy grande)",
+                "1/4 kg carne picada",
+                "Jamón picadito",
+                "Perejil, nuez moscada, sal, pimienta, ajo",
+                "Ciruelas sin hueso o pasas",
+                "Un buen chorreón de Coñac",
+                "5 o 6 huevos",
+                "Cebolla, puerro, apio, zanahoria (para el caldo)",
+                "Huevo hilado para adornar"
+            ],
+            steps: [
+                "Cocer el pavo con las verduras (puerro, apio, zanahoria) y desmenuzar (guardar caldo).",
+                "Sofreír la carne picada con cebolla pochada.",
+                "Mezclar todo con los huevos, aliños, ciruelas y coñac.",
+                "Hacer cilindros con papel transparente, apretando bien.",
+                "Hornear a 180ºC durante 15 minutos para que cuaje el huevo.",
+                "Dejar enfriar poniendo peso encima.",
+                "Servir frío adornado con huevo hilado."
+            ],
+            image: "assets/pavo_trufao.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12 (3).jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_calamares_rellenos',
+            title: "Calamares Rellenos",
+            description: "Calamares rellenos de sus propios rabos y jamón, en salsa de almendras y azafrán.",
+            ingredients: [
+                "1/2 kg de calamares",
+                "Jamón picadito",
+                "Ajo, perejil, pimienta, sal",
+                "Cebolla, pimiento, tomate",
+                "Vino blanco y azafrán",
+                "Laurel"
+            ],
+            steps: [
+                "Limpiar calamares y picar los rabos chiquitos.",
+                "Mezclar rabos con jamón, ajo, perejil, pimienta y sal.",
+                "Rellenar los calamares y cerrar con palillo.",
+                "Pasar por harina y sofreír. Reservar.",
+                "Hacer sofrito de cebolla, pimiento y tomate. Triturar.",
+                "Añadir calamares al sofrito con vino, azafrán, agua y laurel.",
+                "Cocer hasta que estén tiernos en su salsa."
+            ],
+            image: "assets/calamares_rellenos.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14.jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_paella_2026',
+            title: "Paella de Alfonso",
+            description: "La famosa paella para grandes reuniones, con pollo, cerdo, alcachofas y habicholillas.",
+            ingredients: [
+                "1 o 2 cabezas de ajos",
+                "1 kg - 1,250 kg de carne de pollo troceada pequeña",
+                "1 kg - 1,250 kg de carne de cerdo (estofado) troceada",
+                "1 kg de habicholillas",
+                "1 kg de alcachofas",
+                "0,5 kg de pimiento verde",
+                "0,5 kg de pimiento rojo",
+                "3 kg de arroz (para 30 personas - marca SOS recomendado)",
+                "Sal, pimienta, colorante alimentario",
+                "9 o 10 litros de agua (mejor que caldo)",
+                "Aceite",
+                "4 o 5 limones"
+            ],
+            steps: [
+                "Preparar las alcachofas limpiándolas (sacar 6 trozos de cada una) y ponerlas en agua con limón para que no se pongan negras.",
+                "Tener la paellera nivelada y los ingredientes preparados (cortados).",
+                "Sofreír las carnes y verduras.",
+                "Añadir el arroz y rehogar.",
+                "Añadir el agua (9-10 litros) y sazonar con sal, pimienta y colorante.",
+                "Cocinar hasta que el arroz esté en su punto."
+            ],
+            image: "assets/paella_alfonso.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.56.55.jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_canelones_foie',
+            title: "Canelones de Foiegras",
+            description: "Exquisitos canelones rellenos de foiegras y huevo, gratinados con bechamel.",
+            ingredients: [
+                "1 paquete de canelones precocidos",
+                "1 lata grande de foiegras",
+                "3 huevos duros",
+                "1 tetra brik de tomate frito",
+                "1/2 litro de bechamel",
+                "Queso rallado",
+                "Orégano"
+            ],
+            steps: [
+                "Echar los canelones en agua con cuidado de que no se monten.",
+                "Mezclar el foiegras con los huevos duros picaditos para el relleno.",
+                "Cuando la pasta esté blanca, extender en un paño para secar.",
+                "Rellenar con la mezcla y colocar en una fuente de horno.",
+                "Cubrir con salsa de tomate frito y luego la bechamel.",
+                "Espolvorear queso rallado y orégano.",
+                "Gratinar en el horno antes de servir."
+            ],
+            image: "assets/canelones_foie.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.12.jpeg",
+            category: "Plato Principal",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
+            id: 'lili_mantecados',
+            title: "Mantecados Caseros",
+            description: "La receta tradicional de mantecados con manteca blanca y zumo de naranja.",
+            ingredients: [
+                "2 tarrinas de manteca blanca",
+                "2 kg de harina (repostería o trigo 'guena')",
+                "Medio vaso de zumo de naranja",
+                "Azúcar glas",
+                "Papel de servilletas de seda para envolver"
+            ],
+            steps: [
+                "Encender el horno a 180ºC.",
+                "Mezclar la manteca con la harina y el zumo poco a poco. Amasar hasta que las manos no queden con grasa.",
+                "Hacer dos trozos para trabajar mejor. Dejar reposar 2 o 3 horas.",
+                "Añadir harina a la mesa y extender la masa con rodillo (altura medio cm).",
+                "Cortar con vaso o copa pequeña y colocar en bandeja de horno.",
+                "Hornear hasta que se vean dorados.",
+                "Al sacar, meter en azúcar glas y envolver en papel de seda."
+            ],
+            image: "assets/mantecados_caseros.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13.jpeg",
+            category: "Postre",
+            abuela: 'Lili',
+            rotation: 0
+        },
+        {
             id: 'lili_mantecados_abuela_ana',
             title: "Mantecados de la Abuela Ana",
             abuela: "Lili",
@@ -831,7 +1150,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Añadir harina con el bicarbonato hasta hacer una masa.<br>
                 3. Formar los roscos y freír en aceite caliente.
             `,
-            image: "assets/roscos_fritos.png"
+            image: "assets/roscos_fritos.png",
+            originalImage: "assets/20251204_184845.jpg",
+            rotation: 90
         },
         {
             id: '20251204_184845_2',
@@ -1803,6 +2124,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial Render
     renderCategoryFilters();
+
+    // Footer Count Update
+    const copyrightEl = document.getElementById('copyright');
+    if (copyrightEl) {
+        copyrightEl.innerHTML = `&copy; 2026 ${recipes.length} Recetas de las Abuelas. Hecho con ❤️.`;
+    }
+
     filterAndRender();
 
     // Abuela Tab Click Event
@@ -1921,9 +2249,10 @@ document.addEventListener('DOMContentLoaded', () => {
         mari: {
             title: "Historia de María Aurora (Mari)",
             content: `
-                <p>María Aurora, nuestra querida Mari, heredó la esencia de Granada de su madre, la abuela Amelia, y la trae a cada rincón de su hogar. Para ella, cocinar nunca es una tarea, sino un acto de amor puro. Su cocina es el corazón de la casa, un lugar donde siempre hay algo bullendo en el fuego y un sitio más en la mesa.</p>
-                <p>Su lenguaje es el aroma del sofrito y el sonido de la risa compartida. Mari no solo alimenta el cuerpo, sino también el alma de su familia. Crió a Javi, Cintia e Irene con la misma paciencia y cariño con los que elabora sus platos.</p>
-                <p>Su legado es una colección de sabores que evocan abrazos y domingos de sol. Nos enseña que el ingrediente más importante es el tiempo y que la felicidad, verdaderamente, se cocina a fuego lento, con mimo y buen humor.</p>
+                <p>María Aurora, nuestra querida Mari, nació en <strong>Écija</strong>, y aunque el destino la llevó lejos, siempre mantuvo la calidez de su tierra. Su historia de amor comenzó en <strong>Torremolinos</strong>, donde el azar —y su hermano Antonio— jugaron un papel clave.</p>
+                <p>Conoció a Fermín gracias a la amistad que este tenía con <strong>Antonio</strong>, coincidiendo cuando ambos trabajaban en el emblemático <strong>Hotel Meliá Torremolinos</strong>. Aquel encuentro marcó el inicio de una vida juntos llena de complicidad y cariño.</p>
+                <p>Para Mari, la cocina es el corazón de su hogar. Crió a Javi, Cintia e Irene entre el aroma de sus guisos y la alegría de una mesa siempre abierta. Una pasión que hoy comparte con sus nietos <strong>Luna, Pablo, Daniela y Leo</strong>.</p>
+                <p>Su legado es esa capacidad única de reunirnos y enseñarnos que la felicidad se cocina a fuego lento, con mimo y buen humor.</p>
             `
         }
     };
@@ -1994,7 +2323,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openModal(recipe) {
         modalTitle.textContent = recipe.title;
-        modalBody.innerHTML = recipe.fullRecipe || `<p>${recipe.description}</p><p><em>(Detalles completos de la receta próximamente)</em></p>`;
+
+        // Generate content dynamically if fullRecipe is missing but structured data exists
+        let content = recipe.fullRecipe;
+        if (!content && recipe.ingredients && recipe.steps) {
+            const ingList = recipe.ingredients.map(i => `- ${i}`).join('<br>');
+            const stepList = recipe.steps.map((s, i) => `${i + 1}. ${s}`).join('<br>');
+            content = `
+                <strong>Ingredientes:</strong><br>
+                ${ingList}<br><br>
+                <strong>Como se hace:</strong><br>
+                ${stepList}
+            `;
+        }
+
+        modalBody.innerHTML = content || `<p>${recipe.description}</p><p><em>(Detalles completos de la receta próximamente)</em></p>`;
 
         // Authenticity link
         const originalLink = document.getElementById('originalLink');
@@ -2051,6 +2394,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
+    // View Toggle Logic
+    const viewToggleBtn = document.getElementById('viewToggleBtn');
+    const viewIcon = document.getElementById('viewIcon');
+
+    if (viewToggleBtn) {
+        viewToggleBtn.addEventListener('click', () => {
+            const grid = document.getElementById('recipeGrid');
+            if (grid) {
+                grid.classList.toggle('list-view');
+                const isListView = grid.classList.contains('list-view');
+
+                // Update Icon/Text
+                viewIcon.textContent = isListView ? '⊞' : '☰';
+            }
+        });
+    }
 
 });
 

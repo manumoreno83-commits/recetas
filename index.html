@@ -119,9 +119,10 @@
                 <div class="bio-card">
                     <img src="assets/mari_profile.png" alt="Mari" class="bio-image">
                     <h3>María Aurora (Mari)</h3>
-                    <p>Natural de <strong>Granada</strong>, Mari convirtió la cocina en su lenguaje del amor. Sus
+                    <p>Natural de <strong>Écija</strong>, Mari convirtió la cocina en su lenguaje del amor. Sus
                         platos, siempre abundantes y llenos de sabor, reunían a la familia cada domingo.</p>
-                    <p>Orgullosa madre de <strong>Javi, Cintia e Irene</strong>. Su risa y sus guisos son el mejor
+                    <p>Orgullosa madre de <strong>Javi, Cintia e Irene</strong>, y abuela de <strong>Luna, Pablo,
+                            Daniela y Leo</strong>. Su risa y sus guisos son el mejor
                         legado que nos deja, enseñándonos que la felicidad se cocina a fuego lento.</p>
                     <a href="javascript:void(0)" class="btn-text read-story" onclick="openBio('mari')">Leer historia
                         &rarr;</a>
@@ -140,10 +141,18 @@
                 <button class="tab-btn" data-abuela="Amelia">Recetas de Amelia</button>
             </div>
 
-            <!-- Category Filters -->
-            <div class="category-filter-container">
-                <button class="category-btn active" data-category="all">Todas</button>
-                <!-- Categories injected by JS -->
+            <!-- Toolbar: Filters + View Toggle -->
+            <div class="toolbar-container"
+                style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <!-- Category Filters (injected by JS) -->
+                <div class="category-filter-container" style="margin-bottom: 0;">
+                    <button class="category-btn active" data-category="all">Todas</button>
+                </div>
+
+                <!-- View Toggle Button -->
+                <button id="viewToggleBtn" class="view-mode-btn" title="Cambiar Vista">
+                    <span id="viewIcon">☰</span> Vista
+                </button>
             </div>
 
             <div class="recipe-grid" id="recipeGrid">
@@ -196,7 +205,7 @@
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Recetas de las Abuelas. Hecho con ❤️.</p>
+            <p id="copyright">&copy; 2026 Recetas de las Abuelas. Hecho con ❤️.</p>
         </footer>
     </div>
 
