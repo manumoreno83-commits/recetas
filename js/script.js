@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/croquetas_caseras.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (2).jpeg",
-            category: "Entrantes y Tapas",
+            category: "Entrante",
             abuela: 'Lili',
             rotation: 0
         },
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/pudin_pescado.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.15.jpeg",
-            category: "Entrantes y Tapas",
+            category: "Entrante",
             abuela: 'Lili',
             rotation: 0
         },
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             image: "assets/empanada_hojaldre.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13 (3).jpeg",
-            category: "Entrantes y Tapas",
+            category: "Entrante",
             abuela: 'Lili',
             rotation: 0
         },
@@ -1049,7 +1049,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/roscos_fritos.png",
             originalImage: "assets/20251204_184845.jpg",
-            rotation: 0
+            rotation: 90
         },
         {
             id: '20251204_184845_2',
@@ -1759,7 +1759,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Category Mapping Logic
     const categoryMap = {
         "Postres": "Postres y Dulces",
-        "Entrante": "Entrantes y Tapas",
         "Salados": "Entrantes y Tapas",
         "Cuchara": "Guisos y Cuchara",
         "Guisos": "Guisos y Cuchara",
@@ -1829,12 +1828,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const recipeGrid = document.getElementById('recipeGrid');
     const abuelaTabs = document.querySelectorAll('.tab-btn[data-abuela]');
     const categoryContainer = document.querySelector('.category-filter-container');
-    const carouselTrack = document.getElementById('carouselTrack');
-
-    // Duplicate carousel items for infinite loop
-    if (carouselTrack) {
-        carouselTrack.innerHTML += carouselTrack.innerHTML;
-    }
 
     // State
     let currentAbuela = 'all';
@@ -2189,12 +2182,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const grid = document.getElementById('recipeGrid');
             if (grid) {
                 grid.classList.toggle('list-view');
-                // Update Icon/Text
                 const isListView = grid.classList.contains('list-view');
+
+                // Update Icon/Text
                 viewIcon.textContent = isListView ? '⊞' : '☰';
-                viewToggleBtn.innerHTML = isListView
-                    ? `<span id="viewIcon">⊞</span> Vista Fotos`
-                    : `<span id="viewIcon">☰</span> Ver Lista`;
                 viewToggleBtn.classList.toggle('active', isListView);
 
                 // Re-render to update structure (Accordion vs Card)

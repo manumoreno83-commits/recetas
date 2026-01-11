@@ -53,7 +53,7 @@
 /* Search Container */
 .search-container {
     max-width: 700px;
-    margin: -60px auto 4rem;
+    margin: -120px auto 4rem;
     padding: 0 1.5rem;
     position: relative;
     z-index: 100;
@@ -863,8 +863,7 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-light);
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -1109,17 +1108,13 @@ footer {
 .recipe-accordion-content {
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s ease-out;
     padding: 0 1.5rem;
     background: #fff;
 }
 
 .recipe-accordion-item.active .recipe-accordion-content {
     max-height: 2000px;
-    opacity: 1;
-    transform: translateY(0);
     padding: 1.5rem;
 }
 
@@ -1174,88 +1169,5 @@ footer {
 
     .recipe-accordion-item .recipe-title {
         font-size: 1rem;
-    }
-}
-
-/* Family Carousel */
-.family-carousel-section {
-    padding: 2rem 0;
-    overflow: hidden;
-    position: relative;
-    margin-top: -100px;
-    z-index: 5;
-    background: transparent;
-}
-
-.carousel-container {
-    max-width: 100%;
-}
-
-.carousel-track {
-    display: flex;
-    gap: 20px;
-    padding: 10px 0;
-    width: max-content;
-}
-
-.carousel-item {
-    min-width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 4px solid #fff;
-    transform: rotate(var(--rotation, 0deg));
-    transition: all 0.3s ease;
-    filter: sepia(0.2);
-}
-
-.carousel-item:nth-child(even) {
-    --rotation: 2deg;
-}
-
-.carousel-item:nth-child(odd) {
-    --rotation: -2deg;
-}
-
-.carousel-item:hover {
-    transform: scale(1.05) rotate(0deg);
-    filter: sepia(0);
-    z-index: 10;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Animations */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-320px * 6));
-    }
-}
-
-.carousel-track {
-    animation: scroll 40s linear infinite;
-}
-
-.carousel-track:hover {
-    animation-play-state: paused;
-}
-
-@media (max-width: 768px) {
-    .carousel-item {
-        min-width: 220px;
-        height: 150px;
-    }
-
-    .family-carousel-section {
-        margin-top: -60px;
     }
 }
