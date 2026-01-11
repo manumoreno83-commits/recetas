@@ -17,20 +17,31 @@
 ## Tareas Pendientes ⏳
 
 ### 🔴 Prioridad Alta
-- [ ] **Commit de Cambios Pendientes**: Hay cambios sin guardar en Git:
-    - `css/styles.css` - modificado
-    - `js/script.js` - modificado
-    - Hacer commit y push a GitHub para actualizar Netlify automáticamente
+- [x] **Commit de Cambios Pendientes**: ✅ Completado
+    - Cambios en `css/styles.css` y `js/script.js` subidos
+    - Netlify actualizándose automáticamente
 
-- [ ] **Crear Carpeta de Familia**: La carpeta `assets/familia/` no existe
-    - Crear directorio `assets/familia/`
-    - Añadir 6 fotos familiares (foto1.jpg - foto6.jpg)
-    - Estas imágenes se muestran en el carrusel de la página principal
+- [x] **Crear Carpeta de Familia**: ✅ Completado
+    - Directorio `assets/familia/` creado
+    - Documentación añadida (README.md y PENDIENTE.md)
+    - **Pendiente**: Añadir 6 fotos familiares manualmente (foto1.jpg - foto6.jpg)
+    - Nota: Cuota de generación de imágenes agotada (se resetea ~22:49 UTC)
 
-- [ ] **Icono de la App (PWA)**: 
-    - El archivo `manifest.json` y el HTML referencian `assets/placeholder.png` como icono
-    - Crear o seleccionar un icono apropiado para la app (512x512px recomendado)
-    - Actualizar referencias en `manifest.json` y línea 24 de `index.html`
+- [x] **Icono de la App (PWA)**: ✅ Completado
+    - Creado `assets/app-icon.png` (usando perfil de Lili temporalmente)
+    - Actualizado `manifest.json` y `index.html`
+    - **Mejora futura**: Crear icono personalizado definitivo
+
+- [x] **Actualización de Contenido**: ✅ Completado
+    - Título "Paella de Mari" actualizado
+    - Top 12 recetas configurado (2 filas de 6):
+        - Añadido "Pavo Trufao" (Lili)
+        - Añadido "Albóndigas de Bacalao" (Amelia)
+    - Biografías actualizadas:
+        - Lili: Mención a 6 nietos (Ana, Carlos, Andrea, Vera, Daniela, Leo) en versión extendida
+        - Mari: 4 nietos mencionados en versión corta, nombres en versión extendida
+        - Textos justificados
+        - Alfonso en negrita
 
 ### 🟡 Prioridad Media
 - [ ] **Verificación de Imágenes**: Revisar que todas las recetas tengan imágenes correctas
