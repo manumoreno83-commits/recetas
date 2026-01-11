@@ -297,32 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             abuela: 'Lili',
             rotation: 0
         },
-        {
-            id: 'lili_mantecados',
-            title: "Mantecados Caseros",
-            description: "La receta tradicional de mantecados con manteca blanca y zumo de naranja.",
-            ingredients: [
-                "2 tarrinas de manteca blanca",
-                "2 kg de harina (repostería o trigo 'guena')",
-                "Medio vaso de zumo de naranja",
-                "Azúcar glas",
-                "Papel de servilletas de seda para envolver"
-            ],
-            steps: [
-                "Encender el horno a 180ºC.",
-                "Mezclar la manteca con la harina y el zumo poco a poco. Amasar hasta que las manos no queden con grasa.",
-                "Hacer dos trozos para trabajar mejor. Dejar reposar 2 o 3 horas.",
-                "Añadir harina a la mesa y extender la masa con rodillo (altura medio cm).",
-                "Cortar con vaso o copa pequeña y colocar en bandeja de horno.",
-                "Hornear hasta que se vean dorados.",
-                "Al sacar, meter en azúcar glas y envolver en papel de seda."
-            ],
-            image: "assets/mantecados_caseros.png",
-            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.13.jpeg",
-            category: "Postre",
-            abuela: 'Lili',
-            rotation: 0
-        },
+
         {
             id: 'lili_mantecados_abuela_ana',
             title: "Mantecados de la Abuela Ana",
