@@ -9,9 +9,9 @@ This plan outlines the steps to deploy the "Recetas de las Abuelas" project to t
     - `git commit -m "Initial commit of Recetas de las Abuelas"`
 
 ## Phase 2: Remote Repository (GitHub)
-- [ ] **Create GitHub Repository**: Create a new empty repository on GitHub named `recetas-abuelas`.
+- [x ] **Create GitHub Repository**: Create a new empty repository on GitHub named `recetas-abuelas`.
 - [ ] **Link Remote**: Add the GitHub URL as the remote origin.
-    - `git remote add origin https://github.com/manumoreno83-commits/recetas-abuelas.git`
+    - `git remote add originhttps://github.com/manumoreno83-commits/recetas-abuelas.git` 
 - [ ] **Push Code**: Push the local master branch to GitHub.
     - `git push -u origin master`
 

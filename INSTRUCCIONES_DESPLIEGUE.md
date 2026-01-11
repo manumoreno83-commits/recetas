@@ -41,3 +41,42 @@ Tu web ya está configurada como una **PWA (Progressive Web App)**. Esto signifi
 - **Funciona Offline:** Gracias al archivo `sw.js`, las recetas visitadas se guardan para verse sin internet.
 - **Sin descargas pesadas:** Es muy ligera.
 - **Actualizaciones automáticas:** Al actualizar la web, la App se actualiza sola.
+
+---
+
+## 3. Guía Paso a Paso: Implementación con GitHub + GitHub Pages
+
+Esta es la opción más profesional y te permite tener tu web online gratis para siempre, con un dominio tipo `tusuario.github.io/recetas`.
+
+### Paso 1: Preparar tu código local (Ya realizado)
+Ya hemos guardado todos tus cambios en la versión local. Tu proyecto está listo para subirse.
+
+### Paso 2: Crear el repositorio en GitHub
+1. Entra a [github.com](https://github.com) y loguéate.
+2. Haz clic en el icono **+** (arriba a la derecha) y selecciona **New repository**.
+3. **Repository name**: Escribe un nombre, por ejemplo: `recetas-abuelas`.
+4. **Public/Private**: Elige **Public** (necesario para GitHub Pages gratuito).
+5. **NO** marques "Initialize this repository with a README", ni .gitignore, ni license. Queremos un repositorio vacío.
+6. Dale al botón verde **Create repository**.
+
+### Paso 3: Conectar y subir tu código
+Una vez creado, verás una pantalla con instrucciones. Busca la sección **"…or push an existing repository from the command line"**.
+
+Copia y pega los siguientes comandos en tu terminal (uno por uno):
+
+```bash
+git remote add origin https://github.com/TU_USUARIO/recetas-abuelas.git
+git branch -M main
+git push -u origin main
+```
+*(Asegúrate de cambiar `TU_USUARIO` por tu nombre de usuario real de GitHub)*.
+
+### Paso 4: Activar GitHub Pages (Para ver la web online)
+1. En tu repositorio de GitHub, ve a la pestaña **Settings** (arriba).
+2. En el menú de la izquierda, busca y haz clic en **Pages**.
+3. En la sección **Build and deployment** > **Source**, selecciona **Deploy from a branch**.
+4. En **Branch**, selecciona `main` y la carpeta `/(root)`. Dale a **Save**.
+5. Espera unos instantes (recarga la página). Verás un mensaje arriba que dice:
+   > "Your site is live at https://tu-usuario.github.io/recetas-abuelas/"
+
+¡Esa es tu URL definitiva! Compártela con la familia.

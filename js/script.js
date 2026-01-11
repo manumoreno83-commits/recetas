@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 6. Hornear hasta que se vean dorados.<br>
                 7. Sacar con cuidado (usar una pala), pasar por azúcar glas y envolver en el papel de seda.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/mantecados_abuela_ana.png"
         },
         {
             id: 'lili_pavo_trufao',
@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 7. Servir frío adornado con huevo hilado.<br>
                 (Nota: Antiguamente se cocía en bolsas de tela en el caldo del pavo).
             `,
-            image: "assets/placeholder.png"
+            image: "assets/pavo_trufao.png"
         },
         {
             id: '20260111_01',
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 5. Sazonar con sal, pimienta y azafrán. Cuando hierva unos 20 min, añadir el arroz.<br>
                 6. Dejar hervir 15 o 20 min (los últimos 5 al horno si es posible).
             `,
-            image: "assets/placeholder.png",
+            image: "assets/paella_mari.png",
             originalImage: "assets/mari_paella_manuscript.jpg"
         },
         {
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Sazonar, tapar y hervir durante 1 hora.<br>
                 4. Cuando la carne esté tierna, retirar ajos y laurel, y triturar la salsa.
             `,
-            image: "assets/placeholder.png",
+            image: "assets/ternera_oporto.png",
             originalImage: "assets/mari_ternera_oporto_manuscript.jpg"
         },
         {
@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Incorporar el pollo con un poquito de su aceite.<br>
                 4. Cocinar 15-20 minutos en olla exprés.
             `,
-            image: "assets/placeholder.png",
+            image: "assets/pollo_pepitoria_mari.png",
             originalImage: "assets/mari_pollo_pepitoria_manuscript.jpg"
         },
         {
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Cubrir con agua y cerrar.<br>
                 3. Poner a fuego fuerte. Cuando suba la válvula, bajar a fuego medio (6) y cocinar hasta que estén tiernas.
             `,
-            image: "assets/placeholder.png",
+            image: "assets/lentejas_mari.png",
             originalImage: "assets/mari_lentejas_manuscript.jpg"
         },
         {
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Para la salsa: Freír 2 ajos, el pan y las almendras. Aparte sofreír cebolla.<br>
                 4. Triturar todo junto. Echar sobre las albóndigas, cubrir de agua y hervir 20 min.
             `,
-            image: "assets/placeholder.png",
+            image: "assets/albondigas_almendras_mari.png",
             originalImage: "assets/mari_albondigas_almendras_manuscript.jpg"
         },
         {
@@ -863,7 +863,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Preparar caramelo en el molde.<br>
                 3. Verter la mezcla y hornear al baño maría hasta que cuaje.
             `,
-            image: "assets/flan_huevo_casero.png"
+            image: "assets/flan_huevo.jpg"
         },
         {
             id: '20251204_184508',
@@ -882,7 +882,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Añadir el majado y el vino.<br>
                 3. Cubrir de agua y cocer en olla exprés o normal lentamente hasta que esté tierno.
             `,
-            image: "assets/cordero_guisado.png"
+            image: "assets/cordero_guisado.jpg"
         },
         {
             id: '20251204_184516',
@@ -921,7 +921,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Por último la panceta bien frita.<br>
                 4. (Añadir el pan humedecido y remover hasta que estén sueltas y doradas).
             `,
-            image: "assets/placeholder.png"
+            image: "assets/migas_espanolas.jpg"
         },
         {
             id: '20251204_184532',
@@ -943,7 +943,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 4. Hornear con las verduras y 1 vaso de agua a 200º durante 20 min.<br>
                 5. Servir con puré y manzana.
             `,
-            image: "assets/redondo_ternera_mostaza.png"
+            image: "assets/redondo_mostaza.jpg"
         },
         {
             id: '20251204_184536',
@@ -964,7 +964,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Añadir el caldo de pescado caliente (con la tinta disuelta).<br>
                 4. Cocinar hasta que esté en su punto.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/arroz_negro.jpg"
         },
         {
             id: '20251204_184543',
@@ -985,7 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Pasar el rodaballo por la plancha vuelta y vuelta.<br>
                 4. En cazuela: patatas, rodaballo, sofrito, almejas y mejillones. Hornear 10 min.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/rodaballo_horno.png"
         },
         {
             id: '20251204_184609',
@@ -1004,7 +1004,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 1. Triturar todos los ingredientes hasta obtener una crema suave.<br>
                 2. Servir con un chorrito de aceite de oliva y pimentón por encima.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/hummus_casero.png"
         },
         {
             id: '20251204_184744',
@@ -1534,7 +1534,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Añadir las alcachofas troceadas, el pimiento picado y perejil.<br>
                 3. Regar con vino blanco, salar y cocer a fuego lento añadiendo un poco de agua o caldo hasta que la carne esté tierna.
             `,
-            image: "assets/carne_guisada_alcachofas.png"
+            image: "assets/carne_alcachofas.png"
         },
         {
             id: '20251204_185053',
@@ -1672,7 +1672,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <strong>Como se hace:</strong><br>
                 Se sofríe la cebolla picadita se añade la harina con fuego lento y se mezcla después se añade la leche sin dejar de mover y espesa la masa y se sigue moviendo hasta que cuece y cuando se desprende de la pared ya esta cocida y se añade la sal y el relleno  así como la nuez moscada poquita se deja enfriar la masa y se forman las croquetas, pasándolas por huevo pan rallado y se fríen que queden doraditas
             `,
-            image: "assets/placeholder.png"
+            image: "assets/croquetas_caseras.png"
         },
         {
             id: 'lili_2',
@@ -1734,7 +1734,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 No conviene que se pase para que no quede seco<br>
                 Se cubre de mahonesa y se adorna como se quiera.....tomatitos,lechuga.    Etc
             `,
-            image: "assets/placeholder.png"
+            image: "assets/pudin_pescado.png"
         },
         {
             id: 'lili_5',
@@ -1777,7 +1777,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se hacen respiraderos con un tenedor pinchando por encima y tb un huevo batido, si no tienes brocha se puede hacer con una servilleta de papel mojandola en el huevo<br>
                 Se mete en el horno a 180 y cuando este dorado se saca
             `,
-            image: "assets/placeholder.png"
+            image: "assets/empanada_hojaldre.png"
         },
         {
             id: 'lili_7',
@@ -1802,7 +1802,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 La carne se mezcla con lo dicho y se hacen la bolas no demasiado apretadas para que cale el sabor de la salsa, ayudándote de la harina<br>
                 Se fríen poco sólo doradas y se añaden a la cacerola con un chorreon de vino blanco o el que tengas y algo de agua poca y una hoja de laurel y que cuece un ratito a fuego lento.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/albondigas_caseras.png"
         },
         {
             id: 'lili_8',
@@ -1824,7 +1824,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se sofríe la carne con la cebolla pochada sal ajo y perejil<br>
                 Se van colocando capas de lasaña,capa de carne y de tomate que previamente se ha podido mezclar con la carne al final se echa la bechamel cubriéndolo todo y se añade el queso y el orégano y a la hora de comer se mete a gratinar
             `,
-            image: "assets/placeholder.png"
+            image: "assets/lasana_carne.png"
         },
         {
             id: 'lili_9',
@@ -1915,7 +1915,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Tb se hace aparte el clásico sofrito de cebolla,pimiento y tomate y se tritura<br>
                 Al sofrito se le añaden los calamares y se ponen a cocer con vino ,azafrán y un poquito de agua.....hasta qué se queden en su salsa y estén tiernos.....se me olvidaba añadir hoja de laurel
             `,
-            image: "assets/placeholder.png"
+            image: "assets/calamares_rellenos.png"
         },
         {
             id: 'lili_13',
@@ -1967,7 +1967,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Tb las gambas grudas y las almejas que se cocieron antes para que estén peladas y el caldo se puede añadir colado<br>
                 A la hora de comer se le añade la mahonesa pero que el guiso no esté hirviendo pues se corta
             `,
-            image: "assets/placeholder.png"
+            image: "assets/gazpachuelo_lili.png"
         },
         {
             id: 'lili_15',
