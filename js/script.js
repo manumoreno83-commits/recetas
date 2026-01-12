@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Freír hasta dorar."
             ],
             image: "assets/croquetas_caseras.png",
-            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 13.59.14 (2).jpeg",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 14.01.52.jpeg",
             category: "Entrante",
             abuela: 'Lili',
             rotation: 0
