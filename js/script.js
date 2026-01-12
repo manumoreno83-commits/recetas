@@ -1620,7 +1620,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se bate todos los demás ,el orden en que se echan no lo se pues pienso que luego influye en que suba más o menos.Se echa la masa en el molde.El horno está   previamente a 180<br>
                  y se mete sin abrir el horno hasta que se ve doradito.....o la aguja sale limpia
             `,
-            image: "assets/bizcocho_yogur.png",
+            image: "assets/placeholder.png",
             originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 14.02.44.jpeg"
         },
         {
@@ -1780,13 +1780,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 r.originalImage = `assets/${baseId}.jpg`;
             }
             // Fix orientation for these camera uploads (verified by checking 20251204_184237.jpg)
-            r.rotation = 90;
+            // r.rotation = 90; // Rotation removed as source images are fixed
         }
 
         // Special case for id '1' (Pastel Cierva)
         if (r.id === '1') {
             r.originalImage = 'assets/20251204_184237.jpg';
-            r.rotation = 90;
+            // r.rotation = 90;
         }
     });
 
