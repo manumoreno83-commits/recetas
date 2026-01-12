@@ -5,6 +5,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Recipe Data
     const recipes = [
         {
+            id: 'lili_mantecados_abuela_ana',
+            title: "Mantecados de la Abuela Ana",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Postres",
+            description: "Receta tradicional de mantecados con manteca, zumo de naranja y azúcar glas.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                - 2 tarrinas de Manteca blanca<br>
+                - 2 kg de Harina (repostería o trigo de buena calidad)<br>
+                - 1/2 vaso de Zumo de Naranja<br>
+                - Azúcar glas (para decorar)<br>
+                - Papel de seda o servilletas (para envolver)<br><br>
+                <strong>Preparación:</strong><br>
+                1. Precalentar el horno a 180ºC.<br>
+                2. Mezclar la manteca con la harina y el zumo poco a poco. Amasar hasta que las manos no se queden con grasa.<br>
+                3. Dividir la masa en dos trozos para trabajar mejor. Dejar reposar 2 o 3 horas (opcional).<br>
+                4. Espolvorear harina sobre la mesa y extender la masa con rodillo (altura de medio cm).<br>
+                5. Cortar con un vaso o copa pequeña y colocar en la bandeja de horno.<br>
+                6. Hornear hasta que se vean dorados.<br>
+                7. Sacar con cuidado (usar una pala), pasar por azúcar glas y envolver en el papel de seda.
+            `,
+            image: "assets/mantecados_abuela_ana.png"
+        },
+        {
             id: 'lili_croquetas',
             title: "Croquetas",
             description: "Croquetas de atún o restos, con bechamel cremosa y nuez moscada.",
@@ -271,31 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rotation: 0
         },
 
-        {
-            id: 'lili_mantecados_abuela_ana',
-            title: "Mantecados de la Abuela Ana",
-            abuela: "Lili",
-            author: "Lili",
-            category: "Postres",
-            description: "Receta tradicional de mantecados con manteca, zumo de naranja y azúcar glas.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                - 2 tarrinas de Manteca blanca<br>
-                - 2 kg de Harina (repostería o trigo de buena calidad)<br>
-                - 1/2 vaso de Zumo de Naranja<br>
-                - Azúcar glas (para decorar)<br>
-                - Papel de seda o servilletas (para envolver)<br><br>
-                <strong>Preparación:</strong><br>
-                1. Precalentar el horno a 180ºC.<br>
-                2. Mezclar la manteca con la harina y el zumo poco a poco. Amasar hasta que las manos no se queden con grasa.<br>
-                3. Dividir la masa en dos trozos para trabajar mejor. Dejar reposar 2 o 3 horas (opcional).<br>
-                4. Espolvorear harina sobre la mesa y extender la masa con rodillo (altura de medio cm).<br>
-                5. Cortar con un vaso o copa pequeña y colocar en la bandeja de horno.<br>
-                6. Hornear hasta que se vean dorados.<br>
-                7. Sacar con cuidado (usar una pala), pasar por azúcar glas y envolver en el papel de seda.
-            `,
-            image: "assets/mantecados_abuela_ana.png"
-        },
+
 
         {
             id: '20260111_01',
@@ -1717,6 +1718,81 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/placeholder.png",
             originalImage: "assets/manuscrito_salmorejo.jpg"
+        },
+        {
+            id: 'encarna_1',
+            title: "Estofado de la Abuela Encarna",
+            abuela: "Encarna",
+            author: "Encarna",
+            category: "Guisos",
+            description: "Estofado tradicional de ternera con verduras a fuego lento.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                1 cebolla, 1 pimiento, 1 tomate sin piel<br>
+                Ternera a cuadritos (sin grasa ni tendones)<br>
+                Zanahorias (3 o 4), 1 bolsa de guisantes<br>
+                1 vaso de vino blanco<br>
+                Patatas (3 o 4)<br>
+                Sal, pimienta, aceite<br><br>
+                <strong>Preparación:</strong><br>
+                1. Se dora 1 cebolla en la olla con aceite y se añade 1 pimiento y 1 tomate sin piel.<br>
+                2. Este sofrito se pasa por la batidora para que no queden trozos.<br>
+                3. Se añade la ternera a cuadritos y se sofríe.<br>
+                4. Añadir zanahorias y guisantes. Todo a fuego lento + 1 vaso de vino blanco.<br>
+                5. Añadir un poco de agua y cocinar a fuego lento 3 o 4 horas (en olla express 1/2 hora).<br>
+                6. Aparte se fríen patatas a cuadritos y se añaden.<br>
+                7. Salpimentar al gusto.<br>
+                <br><em><a href="javascript:void(0)" onclick="openModal('assets/manuscrito_estofado_encarna_2.jpg')">Ver manuscrito alternativo (con anotaciones)</a></em>
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/manuscrito_estofado_encarna_1.jpg"
+        },
+        {
+            id: 'lili_cocido',
+            title: "Cocido de Lili",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Guisos",
+            description: "Cocido completo con garbanzos, carnes y verduras variadas. Receta de Lili.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                1/2 kg Garbanzos (remojo noche anterior con agua tibia y sal)<br>
+                Carnes: 1/4 kg pollo, 1/4 kg ternera, tocino fresco (un trozo), hueso de jamón<br>
+                Verduras: Patata, zanahoria, habicholillas, calabacín, calabaza, puerro, nabo, col, apio<br>
+                2 pastillas de Avecrem, Sal<br><br>
+                <strong>Preparación:</strong><br>
+                1. Poner todo en una olla cubierto de agua (o más).<br>
+                2. Cocinar a fuego lento cuando empiece a hervir.<br>
+                3. Mantener hasta que los garbanzos estén tiernos (toda la mañana mejor).<br>
+                <br><em><a href="javascript:void(0)" onclick="openModal('assets/manuscrito_cocido_lili_2.jpg')">Ver segundo manuscrito (Lili)</a></em>
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/manuscrito_cocido_lili_1.jpg"
+        },
+        {
+            id: 'lili_pisto',
+            title: "Pisto",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Verduras",
+            description: "Pisto tradicional de verduras a fuego lento con tomate.",
+            fullRecipe: `
+                <strong>Ingredientes:</strong><br>
+                1 cebolla<br>
+                2 calabacines, 2 berenjenas<br>
+                2 pimientos verdes (o más), 1 pimiento rojo<br>
+                Sal, pimienta, algo de ajo<br>
+                Tomate frito<br>
+                Aceite<br><br>
+                <strong>Preparación:</strong><br>
+                1. Se pone en la olla el culo de aceite.<br>
+                2. Se pican todas las verduras (cebolla, calabacines, berenjenas, pimientos).<br>
+                3. Se añaden a la olla con sal, pimienta y un poco de ajo.<br>
+                4. Cocinar a fuego lento.<br>
+                5. Cuando empiece a hervir (y esté tierno), al final se añade el tomate frito para que no se pegue.
+            `,
+            image: "assets/placeholder.png",
+            originalImage: "assets/manuscrito_pisto.jpg"
         }
     ];
 
