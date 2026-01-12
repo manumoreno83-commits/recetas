@@ -509,26 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/pollo_salsa.png"
         },
-        {
-            id: '20251204_184330',
-            title: "Spaghetti Carbonara",
-            author: "Receta de la Abuela",
-            category: "Pastas",
-            description: "Versión casera cremosa con bacon, jamón y champiñones.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                - Espaguetis<br>
-                - Bacon, Jamón, Champiñones<br>
-                - Nata líquida<br>
-                - Pimienta blanca molida<br><br>
-                <strong>Preparación:</strong><br>
-                1. Dorar el bacon. Añadir jamón y champiñones.<br>
-                2. Cuando esté dorado, añadir la nata (y opcionalmente una pastilla de caldo).<br>
-                3. Dejar espesar la salsa.<br>
-                4. Mezclar con la pasta cocida y añadir pimienta blanca.
-            `,
-            image: "assets/spaghetti_carbonara.png"
-        },
+
         {
             id: '20251204_184339',
             title: "Coca de Requesón",
@@ -885,25 +866,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `,
             image: "assets/rodaballo_horno.png"
         },
-        {
-            id: '20251204_184609',
-            title: "Hummus",
-            author: "Receta de la Abuela",
-            category: "Entrantes",
-            description: "Crema de garbanzos casera con tahini.",
-            fullRecipe: `
-                <strong>Ingredientes:</strong><br>
-                - 1/2 kg Garbanzos cocidos<br>
-                - 2 o 3 cucharaditas de Tahini<br>
-                - 2 cucharaditas Cominos<br>
-                - 2 dientes de Ajo<br>
-                - 1 cucharadita Pimentón, Sal<br><br>
-                <strong>Preparación:</strong><br>
-                1. Triturar todos los ingredientes hasta obtener una crema suave.<br>
-                2. Servir con un chorrito de aceite de oliva y pimentón por encima.
-            `,
-            image: "assets/hummus_casero.png"
-        },
+
         {
             id: '20251204_184744',
             title: "Pestiños",
