@@ -1999,10 +1999,6 @@
     renderCategoryFilters();
 
     // Footer Count Update
-    const copyrightEl = document.getElementById('copyright');
-    if (copyrightEl) {
-        copyrightEl.innerHTML = `&copy; 2026 ${recipes.length} Recetas de las Abuelas. Hecho con â¤ï¸.`;
-    }
 
     filterAndRender();
 
