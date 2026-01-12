@@ -265,7 +265,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    min-height: 75vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
