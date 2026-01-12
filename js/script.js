@@ -1753,7 +1753,37 @@ document.addEventListener('DOMContentLoaded', () => {
         "Patatas Rellenas", "Bola de Carne", "Roscos (Variante)", "Huevos con Tomate"
     ];
 
+
+    // Image Mapping for newly generated images
+    const imageMap = {
+        // Lili
+        "Berenjenas rellenas de carne": "assets/berenjenas_rellenas.png",
+        "Espinacas con bechamel": "assets/espinacas_bechamel.png",
+        "Mouse de Queso": "assets/mouse_queso.png",
+        "El Salmorejo": "assets/salmorejo_cordobes.png",
+        "Bizcocho": "assets/bizcocho_yogur.png",
+
+        // Amelia
+        "Pestiños": "assets/pestinos.png",
+        "Rosquitos de Vino y Manteca": "assets/rosquitos_vino.png",
+        "Ochios": "assets/ochios.png",
+        "Magdalenas de Pueblo": "assets/magdalenas_pueblo.png",
+        "Bizcocho de Almendra": "assets/bizcocho_almendra.png",
+        "Merengues al Cacao": "assets/merengues_cacao.png",
+        "Roscos (Receta Antigua)": "assets/roscos_antigua.png",
+        "Empanadillas": "assets/empanadillas.png",
+        "Panqueques a la Crema": "assets/panqueques.png",
+        "Bollos de Leche": "assets/bollos_leche.png",
+        "Albondiguillas de Patatas": "assets/albondigas_patata.png",
+        "Galletas de Patatas": "assets/galletas_patata.png",
+        "Bollos de Manteca": "assets/bollos_manteca.png",
+        "Roscón de Reyes": "assets/roscon_reyes.png",
+        "Galletas Caseras": "assets/galletas_caseras.png",
+        "Riñones al Jerez": "assets/rinones_jerez.png"
+    };
+
     // Quick fix to assign "Mari", specific images, and remap categories
+
     recipes.forEach(r => {
         // Default assignment
         if (!r.abuela) r.abuela = "Mari";
@@ -1787,6 +1817,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (r.id === '1') {
             r.originalImage = 'assets/20251204_184237.jpg';
             // r.rotation = 90;
+        }
+
+        // Apply Image from Map
+        if (imageMap[r.title]) {
+            r.image = imageMap[r.title];
         }
     });
 
