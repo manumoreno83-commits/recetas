@@ -748,6 +748,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: '20251204_184504',
             title: "Flan de Huevo",
             author: "Receta de la Abuela",
+            abuela: "Lili",
             category: "Postres",
             description: "El clásico flan de huevo casero.",
             fullRecipe: `
@@ -760,7 +761,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Preparar caramelo en el molde.<br>
                 3. Verter la mezcla y hornear al baño maría hasta que cuaje.
             `,
-            image: "assets/flan_huevo.jpg"
+            image: "assets/flan_lili.png"
         },
         {
             id: '20251204_184508',
@@ -779,7 +780,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Añadir el majado y el vino.<br>
                 3. Cubrir de agua y cocer en olla exprés o normal lentamente hasta que esté tierno.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/cordero_guisado.png"
         },
         {
             id: '20251204_184516',
@@ -818,7 +819,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Por último la panceta bien frita.<br>
                 4. (Añadir el pan humedecido y remover hasta que estén sueltas y doradas).
             `,
-            image: "assets/placeholder.png"
+            image: "assets/migas.png"
         },
         {
             id: '20251204_184532',
@@ -840,11 +841,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 4. Hornear con las verduras y 1 vaso de agua a 200º durante 20 min.<br>
                 5. Servir con puré y manzana.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/redondo_mostaza.png"
         },
         {
             id: '20251204_184536',
-            title: "Arroz Negro (Sepia)",
+            title: "Arroz Negro",
             author: "Receta de la Abuela",
             category: "Arroces",
             description: "Arroz negro tradicional cocinado con sepia y tomate natural.",
@@ -861,7 +862,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 3. Añadir el caldo de pescado caliente (con la tinta disuelta).<br>
                 4. Cocinar hasta que esté en su punto.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/arroz_negro.png"
         },
         {
             id: '20251204_184543',
@@ -1239,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 1. Poner todo en agua fría a hervir durante 10 o 15 minutos (las carnes).<br>
                 2. En una cacerola poner el pollo/carne en crudo, una cucharada de manteca, sal, un chorro pimiento de corneta (choco), pimienta en grano, azafrán, una cabeza de ajos y vino.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/alubias_estofadas.png"
         },
         {
             id: '20251204_184957_1',
@@ -1256,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <strong>Preparación:</strong><br>
                 Mezclar la carne picada con los ajos, pimienta, sangre, calabaza y sal al paladar. Embutir y curar.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/morcilla_extremena.png"
         },
         {
             id: '20251204_184957_2',
@@ -1273,7 +1274,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <strong>Preparación:</strong><br>
                 Se le echa a la carne picada bastante pimentón, vino blanco, ajos y sal al gusto. Amasar y embutir.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/chorizo_extremeno.png"
         },
         {
             id: '20251204_185006_1',
@@ -1331,7 +1332,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Cocer en cacerola con un poco de agua, los ajos, especias y vino hasta que esté tierno y deshuesado.<br>
                 3. Poner en una servilleta, atar los cuatro picos y poner encima una tabla con mucho peso. Al otro día se puede comer.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/queso_cerdo.png"
         },
         {
             id: '20251204_185026',
@@ -1393,7 +1394,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Hacer un sofrito con cebolla, pimiento, tomate y ajo. Majar las almendras, avellanas, azafrán y pan frito.<br>
                 3. Unir todo con el caldo, añadir el pescado desmenuzado y dejar hervir unos minutos.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/sopa_pescado.png"
         },
         {
             id: '20251204_185037_1',
@@ -1411,7 +1412,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 1. Cortar los huevos duros por la mitad. Rellenar con la masa de croquetas fría.<br>
                 2. Rebozar el conjunto y freír. Servir cubiertos con salsa mahonesa.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/huevos_americana.png"
         },
         {
             id: '20251204_185043',
@@ -1449,7 +1450,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 1. Sobre cada filete poner un poco de picadillo de jamón, huevo duro y perejil. Enrollar y atar.<br>
                 2. Rehogar en manteca caliente, espolvorear harina, añadir vino blanco y cebolla picada. Dejar reducir hasta que esté tierno.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/enamorados.png"
         },
         {
             id: '20251204_185057',
@@ -1469,7 +1470,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Mezclar con pan humedecido y rellenar los calamares, cerrándolos con un palillo.<br>
                 3. Freír en aceite y luego cocer en una cacerola con cebolla dorada, caldo y la tinta disuelta.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/calamares_rellenos.png"
         },
         {
             id: '20251204_185105_1',
@@ -1488,7 +1489,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 2. Rellenar con la carne preparada. Tapar el agujero con un trozo de patata.<br>
                 3. Pasar por harina y huevo batido, freír y luego cocer en un poco de caldo o salsa hasta que la patata esté tierna.
             `,
-            image: "assets/placeholder.png"
+            image: "assets/patatas_rellenas.png"
         },
         {
             id: '20251204_185105_2',
@@ -1568,7 +1569,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <strong>Como se hace:</strong><br>
                 Se fríen lentamente las patatas a rodajitas finas con la cebolla Juliana y el pimiento en trozos pequeños que queden blanditos  se escurren y se aparta hasta que se batan los huevos y se mezcla todo y se cuajan lentamente dándole la vuelta pero que no se quede muy seca por dentro.....es difícil darle el punto
             `,
-            image: "assets/placeholder.png"
+            image: "assets/tortilla_patatas.png"
         },
         {
             id: 'lili_3',
@@ -1586,7 +1587,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se mezcla la leche condensada y la nata líquida<br>
                 Y después se añade poco a poco el zumo con la batidora como sí fuera una mahonesa....y se sirve en copas donde previamente el filo se moja de zumo y azúcar
             `,
-            image: "assets/placeholder.png"
+            image: "assets/mousse_limon.png"
         },
 
         {
@@ -1609,7 +1610,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 Con las yemas se mezcla el atún ,el tomate y el aliño del perejil<br>
                 Se rellenan las claras y se ponen en una fuente boca-abajo y se cubren de mahonesa y se adornan
             `,
-            image: "assets/placeholder.png"
+            image: "assets/huevos_rellenos.png"
         },
 
 
