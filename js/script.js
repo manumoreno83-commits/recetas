@@ -2281,13 +2281,19 @@
                 const isListView = grid.classList.contains('list-view');
 
                 // Update Icon/Text
-                viewIcon.textContent = isListView ? 'âŠž' : 'â˜°';
+                viewIcon.textContent = isListView ? '⊞' : '☰';
                 viewToggleBtn.classList.toggle('active', isListView);
 
                 // Re-render to update structure (Accordion vs Card)
                 filterAndRender();
             }
         });
+    }
+
+    // Update Footer Count
+    const totalRecipesSpan = document.getElementById('totalRecipes');
+    if (totalRecipesSpan) {
+        totalRecipesSpan.textContent = recipes.length;
     }
 
 });
