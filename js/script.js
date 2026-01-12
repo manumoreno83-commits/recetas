@@ -1723,9 +1723,9 @@
         {
             id: 'encarna_1',
             title: "Estofado de la Abuela Encarna",
-            abuela: "Encarna",
-            author: "Encarna",
-            category: "Guisos",
+            abuela: "Lili",
+            author: "Lili",
+            category: "Guisos y Cuchara",
             description: "Estofado tradicional de ternera con verduras a fuego lento.",
             fullRecipe: `
                 <strong>Ingredientes:</strong><br>
@@ -2115,8 +2115,8 @@
         lili: {
             title: "Historia de Maria Luisa (Lili)",
             content: `
-                <p style="text-align: justify;">Maria Luisa, conocida por todos como Lili, nació en <strong>Ãšbeda</strong>, aunque siempre fue sevillana de corazón y alma. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
-                <p style="text-align: justify;">Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Ãšbeda encontró el amor en <strong>Alfonso</strong>, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
+                <p style="text-align: justify;">Maria Luisa, conocida por todos como Lili, nació en <strong>Úbeda</strong>, aunque siempre fue sevillana de corazón y alma. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
+                <p style="text-align: justify;">Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en <strong>Alfonso</strong>, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
                 <p style="text-align: justify;">En la cocina, Lili no seguía recetas al pie de la letra. Su secreto era el "ojímetro", esa intuición que convertía cada plato en una creación única. Cada comida era un experimento de sabor que siempre resultaba en un éxito rotundo, reuniendo a su familia alrededor de una mesa llena de vida.</p>
                 <p style="text-align: justify;">Aunque Lili ya no está con nosotros, su legado vive en sus seis nietos: <strong>Ana, Carlos, Andrea, Vera, Daniela y Leo</strong>. No todos llegaron a conocerla en persona, pero la conocen a través de sus recetas, de las historias que se cuentan en cada reunión familiar, y del amor incondicional que sembró en cada generación. Su cocina sigue siendo el puente que une a la familia, manteniendo vivo su espíritu en cada plato que se comparte.</p>
             `
@@ -2124,7 +2124,7 @@
         mari: {
             title: "Historia de María Aurora (Mari)",
             content: `
-                <p style="text-align: justify;">Natural de <strong>Ã‰cija</strong>, Mari ha convertido la cocina en su lenguaje más sincero de amor. No es solo comida lo que prepara, sino abrazos servidos en un plato. Sus recetas, siempre abundantes y rebosantes de sabor, son el imán que reúne a la familia cada domingo, convirtiendo cualquier ocasión en una celebración de la vida y la unión a través de los guisos tradicionales que borda con maestría.</p>
+                <p style="text-align: justify;">Natural de <strong>Écija</strong>, Mari ha convertido la cocina en su lenguaje más sincero de amor. No es solo comida lo que prepara, sino abrazos servidos en un plato. Sus recetas, siempre abundantes y rebosantes de sabor, son el imán que reúne a la familia cada domingo, convirtiendo cualquier ocasión en una celebración de la vida y la unión a través de los guisos tradicionales que borda con maestría.</p>
                 <p style="text-align: justify;">Orgullosa madre de <strong>Javi, Cintia e Irene</strong>, y cariñosa abuela de sus cuatro nietos: <strong>Luna, Pablo, Daniela y Leo</strong>. Junto a <strong>Fermín</strong>, su compañero inquebrantable de vida, ha construido un hogar donde la risa y el cariño son constantes. Su alegría contagiosa y su dedicación son el mejor legado que nos acompaña día a día, enseñándonos que la felicidad se cocina a fuego lento.</p>
                 <p style="text-align: justify;">Mari sigue siendo el alma incansable de la familia, no solo manteniendo viva la tradición culinaria de su madre, sino enriqueciéndola con su toque personal. Su cocina es mucho más que un lugar físico; es un espacio acogedor de encuentro, confesiones, risas y amor incondicional, donde cada plato cuenta una historia de cuidado y cada reunión fortalece los lazos que nos unen.</p>
             `
