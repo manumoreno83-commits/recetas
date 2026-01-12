@@ -1743,7 +1743,7 @@
                 5. Añadir un poco de agua y cocinar a fuego lento 3 o 4 horas (en olla express 1/2 hora).<br>
                 6. Aparte se fríen patatas a cuadritos y se añaden.<br>
                 7. Salpimentar al gusto.<br>
-                <br><em><a href="javascript:void(0)" onclick="openModal('assets/manuscrito_estofado_encarna_2.jpg')">Ver manuscrito alternativo (con anotaciones)</a></em>
+                <br><em><a href="javascript:void(0)" onclick="window.openImageViewer('assets/manuscrito_estofado_encarna_2.jpg')">Ver manuscrito alternativo (con anotaciones)</a></em>
             `,
             image: "assets/placeholder.png",
             originalImage: "assets/manuscrito_estofado_encarna_1.jpg"
@@ -1765,7 +1765,7 @@
                 1. Poner todo en una olla cubierto de agua (o más).<br>
                 2. Cocinar a fuego lento cuando empiece a hervir.<br>
                 3. Mantener hasta que los garbanzos estén tiernos (toda la mañana mejor).<br>
-                <br><em><a href="javascript:void(0)" onclick="openModal('assets/manuscrito_cocido_lili_2.jpg')">Ver segundo manuscrito (Lili)</a></em>
+                <br><em><a href="javascript:void(0)" onclick="window.openImageViewer('assets/manuscrito_cocido_lili_2.jpg')">Ver segundo manuscrito (Lili)</a></em>
             `,
             image: "assets/placeholder.png",
             originalImage: "assets/manuscrito_cocido_lili_1.jpg"
