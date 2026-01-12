@@ -1596,8 +1596,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se mezclan todo lo demás en la batidora y se añade a la flanera<br>
                 Se mete en el horno a 180 hasta que salga la aguja limpia....suele tardar media hora
             `,
-            image: "assets/placeholder.png",
-            originalImage: "assets/manuscrito_flan.jpg"
+            image: "assets/flan_lili.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 14.03.03.jpeg"
         },
         {
             id: 'lili_10',
@@ -1620,7 +1620,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Se bate todos los demás ,el orden en que se echan no lo se pues pienso que luego influye en que suba más o menos.Se echa la masa en el molde.El horno está   previamente a 180<br>
                  y se mete sin abrir el horno hasta que se ve doradito.....o la aguja sale limpia
             `,
-            image: "assets/placeholder.png"
+            image: "assets/bizcocho_yogur.png",
+            originalImage: "assets/nuevas/WhatsApp Image 2026-01-11 at 14.02.44.jpeg"
         },
         {
             id: 'lili_11',
