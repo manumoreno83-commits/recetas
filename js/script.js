@@ -1779,7 +1779,24 @@ document.addEventListener('DOMContentLoaded', () => {
         "Bollos de Manteca": "assets/bollos_manteca.png",
         "Roscón de Reyes": "assets/roscon_reyes.png",
         "Galletas Caseras": "assets/galletas_caseras.png",
-        "Riñones al Jerez": "assets/rinones_jerez.png"
+        "Riñones al Jerez": "assets/rinones_jerez.png",
+
+        // Recuperadas (Old Brain)
+        "Arroz Negro": "assets/arroz_negro_mari.png",
+        "Migas": "assets/migas_tradicionales.png",
+        "Mousse de limon": "assets/mousse_limon_lili.png",
+        "Huevos rellenos": "assets/huevos_rellenos_lili.png",
+        "Tortilla patatas": "assets/tortilla_patatas_lili.png",
+
+        "Sopa de Pescado": "assets/sopa_pescado.png",
+        "Huevos a la Americana": "assets/huevos_americana.png",
+        "Calamares Rellenos": "assets/calamares_rellenos.png",
+        "Patatas Rellenas": "assets/patatas_rellenas.png",
+        "Queso de Cerdo": "assets/queso_cerdo.png",
+        "Chorizo Extremeño": "assets/chorizo_extremeno.png",
+        "Morcilla Extremeña": "assets/morcilla_extremena.png",
+        "Enamorados": "assets/enamorados.png",
+        "Redondo a la Mostaza": "assets/redondo_mostaza_mari.png"
     };
 
     // Quick fix to assign "Mari", specific images, and remap categories
@@ -2021,7 +2038,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lili: {
             title: "Historia de Maria Luisa (Lili)",
             content: `
-                <p style="text-align: justify;">Maria Luisa, conocida por todos como Lili, nació en la luminosa Sevilla, una ciudad que marcó su carácter alegre y decidido. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
+                <p style="text-align: justify;">Maria Luisa, conocida por todos como Lili, nació en <strong>Úbeda</strong>, aunque siempre fue sevillana de corazón y alma. Desde muy joven mostró una mente brillante y curiosa, lo que la llevó a estudiar <strong>Química</strong>, rompiendo barreras en una época en la que pocas mujeres se adentraban en las ciencias puras.</p>
                 <p style="text-align: justify;">Su pasión por la enseñanza la llevó a dedicar su vida a la docencia, donde no solo transmitía fórmulas y reacciones, sino también valores de esfuerzo y superación. En Úbeda encontró el amor en <strong>Alfonso</strong>, formando una familia con sus hijos <strong>Andrés, Alfonso y Manolo</strong>, que fue su mayor orgullo.</p>
                 <p style="text-align: justify;">En la cocina, Lili no seguía recetas al pie de la letra. Su secreto era el "ojímetro", esa intuición que convertía cada plato en una creación única. Cada comida era un experimento de sabor que siempre resultaba en un éxito rotundo, reuniendo a su familia alrededor de una mesa llena de vida.</p>
                 <p style="text-align: justify;">Aunque Lili ya no está con nosotros, su legado vive en sus seis nietos: <strong>Ana, Carlos, Andrea, Vera, Daniela y Leo</strong>. No todos llegaron a conocerla en persona, pero la conocen a través de sus recetas, de las historias que se cuentan en cada reunión familiar, y del amor incondicional que sembró en cada generación. Su cocina sigue siendo el puente que une a la familia, manteniendo vivo su espíritu en cada plato que se comparte.</p>
