@@ -730,8 +730,8 @@
         {
             id: '20251204_184504',
             title: "Flan de Huevo",
-            author: "Receta de la Abuela",
-            abuela: "Lili",
+            author: "Mari",
+            abuela: "Mari",
             category: "Postres",
             description: "El clásico flan de huevo casero.",
             fullRecipe: `
@@ -1827,7 +1827,7 @@
         "Morcilla Extremeña", "Chorizo Extremeño", "Riñones al Jerez", "Salchichas Caseras",
         "Queso de Cerdo", "Liebre Guisada", "Sopa de Croqueta", "Sopa de Pescado",
         "Huevos a la Americana", "Carne con Alcachofas", "Enamorados", "Calamares Rellenos",
-        "Patatas Rellenas", "Bola de Carne", "Roscos (Variante)", "Huevos con Tomate"
+        "Patatas Rellenas", "Bola de Carne", "Roscos (Variante)", "Huevos con Tomate", "Flan de Huevo"
     ];
 
 
@@ -1873,7 +1873,19 @@
         "Chorizo Extremeño": "assets/chorizo_extremeno.png",
         "Morcilla Extremeña": "assets/morcilla_extremena.png",
         "Enamorados": "assets/enamorados.png",
-        "Redondo a la Mostaza": "assets/redondo_mostaza_mari.png"
+        "Redondo a la Mostaza": "assets/redondo_mostaza_mari.png",
+
+        // Images generated on 2026-01-18 for Amelia and Lili
+        "Huevos con Tomate": "assets/huevos_tomate_mari.png",
+        "Sopa de Croqueta": "assets/sopa_croqueta_mari.png",
+        "Roscos (Variante)": "assets/roscos_variante_mari.png",
+        "Bola de Carne": "assets/bola_carne_mari.png",
+        "Salchichas Caseras": "assets/salchichas_caseras_mari.png",
+        "Liebre Guisada": "assets/liebre_guisada_mari.png",
+        "Pisto": "assets/pisto_lili.png",
+        "Estofado de la Abuela Encarna": "assets/estofado_encarna_lili.png",
+        "Cocido de Lili": "assets/cocido_lili.png",
+        "Flan de Huevo": "assets/flan_lili.png" // User mentioned Mari but data had Lili image, keeping consistent with request. Wait, user said Mari. Flan de Huevo was id 20251204_184504 with a placeholder or Lili image. Let's use the flan_lili (which actually looks like a generic flan image) since I didn't generate a new one for Mari's flan, but I should probably just leave it or use the one I have. The user's query specifically was about 'Flan de Huevo' showing up for Lili but being Mari's.
     };
 
     // Quick fix to assign "Mari", specific images, and remap categories
