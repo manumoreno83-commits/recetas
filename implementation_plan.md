@@ -44,15 +44,17 @@
         - Alfonso en negrita
 
 ### 🟡 Prioridad Media
-- [ ] **Verificación de Imágenes**: Revisar que todas las recetas tengan imágenes correctas
+- [x] **Verificación de Imágenes**: Revisar que todas las recetas tengan imágenes correctas
     - Confirmar que no hay referencias a `loremflickr` o URLs externas
     - Verificar que todas las imágenes en `assets/` estén siendo utilizadas
     - Comprobar que no falten imágenes para ninguna receta
+    - **Resultado**: Todas verificadas, sin enlaces externos, sin faltantes.
 
-- [ ] **Optimización de Imágenes**:
+- [x] **Optimización de Imágenes**:
     - Las imágenes manuscritas (JPG) tienen tamaños grandes (6-7 MB cada una)
     - Considerar compresión para mejorar tiempos de carga
     - Especialmente importante para la versión móvil/PWA
+    - **Resultado**: 55 imágenes optimizadas (ahorro significativo de espacio).
 
 - [ ] **Revisión de Contenido**:
     - Verificar que todas las biografías estén completas y correctas
