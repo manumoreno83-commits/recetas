@@ -441,7 +441,7 @@ body {
     }
 
     100% {
-        transform: translateX(calc(-400px * 14 - 1.5rem * 14));
+        transform: translateX(calc(-400px * 15 - 1.5rem * 15));
     }
 }
 
@@ -462,7 +462,7 @@ body {
         }
 
         100% {
-            transform: translateX(calc(-300px * 14 - 1.5rem * 14));
+            transform: translateX(calc(-300px * 15 - 1.5rem * 15));
         }
     }
 }
