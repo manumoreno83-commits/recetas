@@ -1,7 +1,7 @@
 {
   "name": "La Cocina de Lili y Mari",
   "short_name": "La Cocina",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#F9F5EA",
   "theme_color": "#C67142",
@@ -10,7 +10,8 @@
     {
       "src": "assets/app-icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
-}de un plato bonito si se acaban los credito
+}
