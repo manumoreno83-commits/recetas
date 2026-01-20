@@ -1949,6 +1949,11 @@
 
         const categories = new Set(filteredForCategories.map(r => r.category).filter(Boolean));
 
+        // Ensure current active category is visible even if not present in filtered set
+        if (currentCategory !== 'all') {
+            categories.add(currentCategory);
+        }
+
         // Update Total Recipes Tab count
         const totalTab = document.getElementById('totalRecipesTab');
         if (totalTab) {
@@ -2022,7 +2027,7 @@
             tab.classList.add('active');
 
             currentAbuela = tab.dataset.abuela;
-            currentCategory = 'all'; // Reset category when changing abuela
+            // Filter persists (no reset)
 
             renderCategoryFilters();
             filterAndRender();
